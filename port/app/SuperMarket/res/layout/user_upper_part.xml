@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/user_upper_part" android:background="@drawable/user_info_background" android:paddingLeft="3.0dip" android:paddingTop="5.0dip" android:paddingRight="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/user_info_item" layout="@layout/user_icon_name_desc_refresh_care" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+        <include android:id="@id/comment_layout" layout="@layout/one_user_tab" />
+        <include android:id="@id/care_layout" android:layout_marginLeft="5.0dip" layout="@layout/one_user_tab" />
+        <include android:id="@id/fan_layout" android:layout_marginLeft="5.0dip" layout="@layout/one_user_tab" />
+    </LinearLayout>
+</LinearLayout>

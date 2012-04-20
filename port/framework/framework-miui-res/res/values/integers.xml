@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="button_text_shadow_dy">1</integer>
+    <integer name="android_config_defaultNotificationLedOff">@android:integer/config_defaultNotificationLedOff</integer>
+    <integer name="android_config_lowBatteryWarningLevel">@android:integer/config_lowBatteryWarningLevel</integer>
+    <integer name="android_config_lowBatteryCloseWarningLevel">@android:integer/config_lowBatteryCloseWarningLevel</integer>
+    <integer name="android_config_criticalBatteryWarningLevel">@android:integer/config_criticalBatteryWarningLevel</integer>
+    <integer name="android_config_screenBrightnessDim">@android:integer/config_screenBrightnessDim</integer>
+    <integer name="android_config_downloadDataDirSize">@android:integer/config_downloadDataDirSize</integer>
+    <integer name="android_config_downloadDataDirLowSpaceThreshold">@android:integer/config_downloadDataDirLowSpaceThreshold</integer>
+    <integer name="android_config_MaxConcurrentDownloadsAllowed">@android:integer/config_MaxConcurrentDownloadsAllowed</integer>
+    <integer name="android_preference_fragment_scrollbarStyle">@android:integer/preference_fragment_scrollbarStyle</integer>
+    <integer name="config_defaultNotificationLedFreq">4000</integer>
+</resources>

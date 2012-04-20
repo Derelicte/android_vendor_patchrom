@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:layout_width="@dimen/editor_type_label_width" android:layout_height="@dimen/editor_type_label_width" class="com.android.contacts.editor.PhotoEditorView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="left" android:id="@id/photo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_contact_picture_holo_light" android:scaleType="centerCrop" android:cropToPadding="true" />
+    <View android:id="@id/frame" android:background="?android:selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/description_contact_photo" />
+</view>

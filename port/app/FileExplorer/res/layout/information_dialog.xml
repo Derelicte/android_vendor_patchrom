@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:shrinkColumns="2">
+        <TableRow>
+            <TextView android:gravity="right" android:padding="3.0dip" android:layout_column="1" android:text="@string/file_info_location" style="?android:attr/textAppearanceMedium" />
+            <TextView android:id="@id/information_location" android:padding="3.0dip" style="?android:attr/textAppearanceSmall" />
+        </TableRow>
+        <TableRow>
+            <TextView android:gravity="right" android:padding="3.0dip" android:layout_column="1" android:text="@string/file_info_size" style="?android:attr/textAppearanceMedium" />
+            <TextView android:id="@id/information_size" android:padding="3.0dip" style="?android:attr/textAppearanceSmall" />
+        </TableRow>
+        <TableRow>
+            <TextView android:gravity="right" android:padding="3.0dip" android:layout_column="1" android:text="@string/file_info_modified" style="?android:attr/textAppearanceMedium" />
+            <TextView android:id="@id/information_modified" android:padding="3.0dip" style="?android:attr/textAppearanceSmall" />
+        </TableRow>
+        <TableRow>
+            <TextView android:gravity="right" android:padding="3.0dip" android:layout_column="1" android:text="@string/file_info_canread" style="?android:attr/textAppearanceMedium" />
+            <TextView android:id="@id/information_canread" android:padding="3.0dip" style="?android:attr/textAppearanceSmall" />
+        </TableRow>
+        <TableRow>
+            <TextView android:gravity="right" android:padding="3.0dip" android:layout_column="1" android:text="@string/file_info_canwrite" style="?android:attr/textAppearanceMedium" />
+            <TextView android:id="@id/information_canwrite" android:padding="3.0dip" style="?android:attr/textAppearanceSmall" />
+        </TableRow>
+        <TableRow>
+            <TextView android:gravity="right" android:padding="3.0dip" android:layout_column="1" android:text="@string/file_info_ishidden" style="?android:attr/textAppearanceMedium" />
+            <TextView android:id="@id/information_ishidden" android:padding="3.0dip" style="?android:attr/textAppearanceSmall" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="31" android:versionName="3.1.1024" package="com.lbe.security.miui"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="14" />
+    <application android:theme="@android:style/Theme.Holo.Light" android:label="@string/app_name" android:icon="@drawable/icon" android:name="com.lbe.security.LBEApplication" android:persistent="true">
+        <activity android:theme="@android:style/Theme.Holo.Light.NoActionBar" android:name="com.lbe.security.ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.lbe.security.ui.PermissionList" />
+        <activity android:name="com.lbe.security.ui.PermissionListRoot" />
+        <activity android:name="com.lbe.security.ui.PermissionListHIPS" />
+        <activity android:name="com.lbe.security.ui.AppPermissionEditor" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="com.lbe.security.intent.PACKAGE_INSTALLED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Holo.Light.Panel" android:name="com.lbe.security.ui.su.SuEnableDialog" android:exported="true" />
+        <receiver android:name="com.lbe.security.service.optimizer.BootUpReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.lbe.security.service.privacy.DummyContentProvider" android:authorities="com.lbe.security.miui.privacy.content" />
+        <provider android:name="com.lbe.security.service.su.SuContentProvider" android:exported="true" android:authorities="com.lbe.security.miui.su" />
+        <service android:name="com.lbe.security.service.SecurityService" android:enabled="true" />
+    </application>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SET_PROCESS_LIMIT" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/action_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/actionbar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/action_backward" android:src="@drawable/action_backward" style="@style/ActionBarItemImage" />
+    <ImageView android:id="@id/action_forward" android:src="@drawable/action_forward" style="@style/ActionBarItemImage" />
+    <ImageView android:id="@id/action_home" android:src="@drawable/action_home" style="@style/ActionBarItemImage" />
+    <TextView android:id="@id/action_tabs" android:background="@drawable/action_tabs" style="@style/ActionBarItemText" />
+    <ImageView android:id="@id/action_new_tab" android:src="@drawable/nav_new_tab" style="@style/ActionBarItemImage" />
+</LinearLayout>

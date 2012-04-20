@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.miui.home.launcher.DropableGridView android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="insideInset" android:id="@id/folder_content" android:animationCache="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/grid_selector" android:drawSelectorOnTop="false" android:cacheColorHint="#00000000" android:verticalSpacing="5.0dip" android:numColumns="4" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

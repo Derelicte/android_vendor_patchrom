@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="?list_item_padding_left" android:paddingTop="?list_item_padding_top" android:paddingBottom="?list_item_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/detail_min_line_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginRight="?list_item_padding_right" />
+    <include android:id="@id/group_list_header" android:visibility="gone" layout="@layout/group_browse_list_account_header" />
+    <RelativeLayout android:background="?android:listChoiceBackgroundIndicator" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/icons" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <FrameLayout android:id="@id/group_photos_container" android:background="@drawable/group_photos_container_bg" android:layout_width="@dimen/group_list_photos_container_weight" android:layout_height="@dimen/group_list_photo_size">
+                <ImageView android:id="@id/photo2" android:layout_width="@dimen/group_list_photo_size" android:layout_height="@dimen/group_list_photo_size" android:layout_marginLeft="@dimen/group_list_photo2_margin" android:scaleType="centerCrop" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/photo1" android:layout_width="@dimen/group_list_photo_size" android:layout_height="@dimen/group_list_photo_size" android:layout_marginLeft="@dimen/group_list_photo1_margin" android:scaleType="centerCrop" />
+                    <ImageView android:id="@id/photo1_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/group_photo1_shadow" android:scaleType="centerCrop" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/photo0" android:layout_width="@dimen/group_list_photo_size" android:layout_height="@dimen/group_list_photo_size" android:scaleType="centerCrop" />
+                    <ImageView android:id="@id/photo0_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/group_photo0_shadow" android:scaleType="centerCrop" />
+                </LinearLayout>
+            </FrameLayout>
+            <TextView android:textAppearance="@miui:style/TextAppearance.ListView.PrimaryItem" android:ellipsize="end" android:id="@id/label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="5.0dip" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textAppearance="@miui:style/TextAppearance.ListView.SecondaryItem" android:ellipsize="end" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@miui:drawable/arrow_right" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

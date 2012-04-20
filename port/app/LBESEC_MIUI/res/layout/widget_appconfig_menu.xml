@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="?android:dividerVertical" android:showDividers="middle" android:dividerPadding="@dimen/page_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/appconfig_open" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="?android:attr/actionButtonStyle">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Privacy_App_Launch" style="?android:attr/actionBarTabTextStyle" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/appconfig_finish" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="?android:attr/actionButtonStyle">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Privacy_App_Finish" style="?android:attr/actionBarTabTextStyle" />
+    </LinearLayout>
+</LinearLayout>

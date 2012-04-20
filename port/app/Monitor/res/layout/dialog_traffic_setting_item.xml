@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.monitor.widget.DialogTrafficSettingItem android:gravity="center_vertical" android:background="@drawable/traffic_list_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/key" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@android:style/TextAppearance.Medium" />
+    <TextView android:gravity="center" android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/arrow_right" android:drawablePadding="5.0dip" style="@android:style/TextAppearance.Small" />
+</com.android.monitor.widget.DialogTrafficSettingItem>

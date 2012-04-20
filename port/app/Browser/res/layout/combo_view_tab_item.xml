@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:background="@drawable/combo_view_tab_item_bg" style="@style/TabBarItem"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

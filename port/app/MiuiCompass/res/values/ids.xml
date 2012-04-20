@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="view_compass">false</item>
+    <item type="id" name="layout_direction">false</item>
+    <item type="id" name="layout_angle">false</item>
+    <item type="id" name="compass_pointer">false</item>
+    <item type="id" name="location_layout">false</item>
+    <item type="id" name="textview_location">false</item>
+    <item type="id" name="low_accuracy_view">false</item>
+</resources>

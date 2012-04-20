@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/upper" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:text="@string/my_recommendations_and_friends" style="@style/UserTab.Upper" />
+    <TextView android:id="@id/lower" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:text="@string/press_to_login" style="@style/UserTab.Lower" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/status_bar_style_settings" android:key="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceCategory android:title="@string/settings_toggle_layout_style">
+        <com.android.systemui.settings.ToggleStylePreference android:persistent="false" android:key="toggle_style" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_toggle">
+        <PreferenceScreen android:title="@string/settings_toggle_position" android:key="toggle_arrangement">
+            <intent android:targetPackage="com.android.systemui" android:action="android.intent.action.MAIN" android:targetClass="com.android.systemui.settings.ToggleArrangement" />
+        </PreferenceScreen>
+        <CheckBoxPreference android:persistent="true" android:title="@string/settings_toggle_collapse_after_clicked" android:key="toggle_collapse_after_clicked" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_notification_icon">
+        <PreferenceScreen android:title="@string/notification_icon_filter" android:key="notification_icon_filter">
+            <intent android:targetPackage="com.android.systemui" android:action="android.intent.action.MAIN" android:targetClass="com.android.systemui.settings.NotificationIconFilterSettings" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_expanded_view">
+        <CheckBoxPreference android:persistent="false" android:title="@string/settings_expandable_under_keyguard" android:key="expandable_under_keyguard" android:summary="@string/settings_expandable_under_keyguard_summary" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/settings_expandable_under_fullscreen" android:key="expandable_under_fullscreen" android:summary="@string/settings_expandable_under_fullscreen_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

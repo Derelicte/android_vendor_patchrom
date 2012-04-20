@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:id="@id/name" android:text="@string/nickname_picker_name_column" style="@style/NickNameEditorTitle" />
+        <View android:background="?android:dividerVertical" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <TextView android:id="@id/nick_name" android:text="@string/nickname_picker_nickname_column" style="@style/NickNameEditorTitle" />
+    </LinearLayout>
+    <ListView android:gravity="center" android:id="@id/contact_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@null" android:overScrollMode="never" />
+</LinearLayout>

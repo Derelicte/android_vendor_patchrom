@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="config_enableUsbModeSelection">true</bool>
+    <bool name="config_show_status_bar_battery_for_keyguard">true</bool>
+    <bool name="config_show_status_bar_carrier_for_keyguard">true</bool>
+    <bool name="config_show_status_bar_notification_for_keyguard">true</bool>
+    <bool name="config_show_status_bar_status_for_keyguard">true</bool>
+    <bool name="config_show_status_bar_time_for_keyguard">false</bool>
+    <bool name="android_config_disableMenuKeyInLockScreen">@android:bool/config_disableMenuKeyInLockScreen</bool>
+    <bool name="android_config_automatic_brightness_available">@android:bool/config_automatic_brightness_available</bool>
+    <bool name="android_config_wimaxEnabled">@android:bool/config_wimaxEnabled</bool>
+    <bool name="android_config_voice_capable">@android:bool/config_voice_capable</bool>
+    <bool name="android_config_built_in_sip_phone">@android:bool/config_built_in_sip_phone</bool>
+    <bool name="android_config_intrusiveNotificationLed">@android:bool/config_intrusiveNotificationLed</bool>
+    <bool name="android_config_use_strict_phone_number_comparation">@android:bool/config_use_strict_phone_number_comparation</bool>
+    <bool name="config_has_antispam">true</bool>
+</resources>

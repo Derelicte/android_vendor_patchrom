@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom" android:id="@id/yellow_page_header" android:background="@miui:drawable/list_item_with_title_background" android:paddingBottom="2.0dip" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@miui:style/TextAppearance.ListView.SecondaryItem" android:textColor="@miui:color/information_warning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/service_provider" android:layout_alignParentLeft="true" />
+    <TextView android:textAppearance="@miui:style/TextAppearance.ListView.SecondaryItem" android:textColor="@miui:color/information_warning" android:id="@id/yellow_page_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+</RelativeLayout>

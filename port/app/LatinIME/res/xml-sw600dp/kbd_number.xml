@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard latin:keyWidth="16.750002%p"
+  xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin">
+    <include latin:keyboardLayout="@xml/kbd_key_styles" />
+    <include latin:keyboardLayout="@xml/kbd_numkey_styles" />
+    <switch>
+        <case latin:passwordInput="true">
+            <Row>
+                <Spacer latin:keyWidth="24.874996%p" />
+                <Key latin:keyStyle="num1KeyStyle" />
+                <Key latin:keyStyle="num2KeyStyle" />
+                <Key latin:keyStyle="num3KeyStyle" />
+                <Key latin:keyStyle="deleteKeyStyle" latin:keyWidth="fillRight" latin:keyXPos="-11.000002%p" />
+            </Row>
+            <Row>
+                <Spacer latin:keyWidth="24.874996%p" />
+                <Key latin:keyStyle="num4KeyStyle" />
+                <Key latin:keyStyle="num5KeyStyle" />
+                <Key latin:keyStyle="num6KeyStyle" />
+                <Key latin:keyStyle="returnKeyStyle" latin:keyWidth="fillRight" latin:keyXPos="-11.000002%p" />
+            </Row>
+            <Row>
+                <Spacer latin:keyWidth="24.874996%p" />
+                <Key latin:keyStyle="num7KeyStyle" />
+                <Key latin:keyStyle="num8KeyStyle" />
+                <Key latin:keyStyle="num9KeyStyle" />
+                <Spacer latin:keyWidth="0.0%p" />
+            </Row>
+            <Row>
+                <Key latin:keyStyle="tabKeyStyle" latin:keyWidth="11.000002%p" />
+                <Spacer latin:keyXPos="24.874996%p" />
+                <Key latin:keyStyle="num0KeyStyle" />
+                <Spacer latin:keyWidth="0.0%p" latin:keyXPos="-11.000002%p" />
+                <include latin:keyboardLayout="@xml/kbd_qwerty_f2" />
+            </Row>
+        </case>
+        <default>
+            <Row>
+                <Spacer latin:keyWidth="11.000002%p" />
+                <Key latin:keyLabel="-" latin:keyStyle="numKeyStyle" latin:keyWidth="9.249997%p" />
+                <Key latin:keyLabel="+" latin:keyStyle="numKeyStyle" latin:keyWidth="9.249997%p" />
+                <Key latin:keyLabel="." latin:keyStyle="numKeyStyle" latin:keyWidth="9.249997%p" />
+                <Key latin:keyLabel="1" latin:keyStyle="numKeyStyle" latin:keyXPos="38.750004%p" />
+                <Key latin:keyLabel="2" latin:keyStyle="numKeyStyle" />
+                <Key latin:keyLabel="3" latin:keyStyle="numKeyStyle" />
+                <Key latin:keyStyle="deleteKeyStyle" latin:keyWidth="fillBoth" latin:keyXPos="-11.000002%p" />
+            </Row>
+            <Row>
+                <Spacer latin:keyWidth="11.000002%p" />
+                <Key latin:keyStyle="numStarKeyStyle" latin:keyWidth="9.249997%p" />
+                <Key latin:keyLabel="/" latin:keyStyle="numKeyStyle" latin:keyWidth="9.249997%p" />
+                <Key latin:keyLabel="," latin:keyStyle="numKeyStyle" latin:keyWidth="9.249997%p" />
+                <Key latin:keyLabel="4" latin:keyStyle="numKeyStyle" latin:keyXPos="38.750004%p" />
+                <Key latin:keyLabel="5" latin:keyStyle="numKeyStyle" />
+                <Key latin:keyLabel="6" latin:keyStyle="numKeyStyle" />
+                <Key latin:keyStyle="returnKeyStyle" latin:keyWidth="fillBoth" latin:keyXPos="-11.000002%p" />
+            </Row>
+            <Row>
+                <Spacer latin:keyWidth="11.000002%p" />
+                <Key latin:keyLabel="(" latin:keyStyle="numKeyStyle" latin:keyWidth="9.249997%p" />
+                <Key latin:keyLabel=")" latin:keyStyle="numKeyStyle" latin:keyWidth="9.249997%p" />
+                <Key latin:keyLabel="=" latin:keyStyle="numKeyStyle" latin:keyWidth="9.249997%p" />
+                <Key latin:keyLabel="7" latin:keyStyle="numKeyStyle" latin:keyXPos="38.750004%p" />
+                <Key latin:keyLabel="8" latin:keyStyle="numKeyStyle" />
+                <Key latin:keyLabel="9" latin:keyStyle="numKeyStyle" />
+                <Spacer latin:keyWidth="0.0%p" />
+            </Row>
+            <Row>
+                <Key latin:keyStyle="tabKeyStyle" latin:keyWidth="11.000002%p" />
+                <Key latin:keyStyle="nonSpecialBackgroundSpaceKeyStyle" latin:keyWidth="27.750004%p" />
+                <Key latin:keyStyle="numStarKeyStyle" latin:keyXPos="38.750004%p" />
+                <Key latin:keyLabel="0" latin:keyStyle="numKeyStyle" />
+                <Key latin:keyLabel="\#" latin:keyStyle="numKeyStyle" />
+                <Spacer latin:keyWidth="0.0%p" latin:keyXPos="-11.000002%p" />
+                <include latin:keyboardLayout="@xml/kbd_qwerty_f2" />
+            </Row>
+        </default>
+    </switch>
+</Keyboard>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="textColorIconOverlay">#ffffffff</color>
+    <color name="textColorIconOverlayShadow">#ff000000</color>
+    <color name="shortcut_overlay_text_background">#7f000000</color>
+    <color name="quickcontact_list_divider">#ffcdcdcd</color>
+    <color name="quickcontact_list_background">#ffe2e2e2</color>
+    <color name="quickcontact_tab_indicator">#ffff7e00</color>
+    <color name="background_primary">#ffffffff</color>
+    <color name="background_social_updates">#ffeeeeee</color>
+    <color name="section_header_text_color">#ff999999</color>
+    <color name="call_log_missed_call_highlight_color">#ffff0000</color>
+    <color name="call_log_voicemail_highlight_color">#ff33b5e5</color>
+    <color name="voicemail_playback_ui_background">@android:color/black</color>
+    <color name="voicemail_playback_seek_bar_yet_to_play">#44ffffff</color>
+    <color name="voicemail_playback_seek_bar_already_played">#ccffffff</color>
+    <color name="people_app_theme_color">#ffff7e00</color>
+    <color name="dialtacts_secondary_text_color">#ff888888</color>
+    <color name="contact_count_text_color">#ffaaaaaa</color>
+    <color name="action_bar_button_text_color">#7f000000</color>
+    <color name="people_contact_tile_status_color">#ffcccccc</color>
+    <color name="contact_tile_shadow_box_color">#7f000000</color>
+    <color name="stream_item_stripe_color">#ffcccccc</color>
+    <color name="image_placeholder">#ffdddddd</color>
+    <color name="call_button_text">#ffffffff</color>
+    <color name="call_button_text_shadow">#59000000</color>
+    <color name="open_dialer_button_text">#cc000000</color>
+    <color name="open_dialer_button_text_shadow">#7fffffff</color>
+    <color name="missed_call_text">@miui:color/information_error</color>
+    <color name="high_light_text">#ffff7e00</color>
+    <color name="dialer_digits_text_shadow">#59000000</color>
+    <color name="bright_foreground_dark">@android:color/background_light</color>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view class="com.android.quicksearchbox.ui.WebSearchSuggestionView" style="@style/FocusingSuggestion"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon1" android:src="@drawable/magnifying_glass" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" style="@style/WebSuggestionIcon1" />
+    <ImageView android:id="@id/icon2" android:background="@drawable/suggestion_highlight" android:src="@drawable/ic_commit" android:scaleType="centerInside" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/SuggestionIcon2" />
+    <TextView android:ellipsize="start" android:id="@id/text1" android:maxLines="2" android:singleLine="false" android:layout_toLeftOf="@id/icon2" android:layout_toRightOf="@id/icon1" android:layout_centerVertical="true" style="@style/SuggestionText1" />
+</view>

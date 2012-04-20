@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/pinned_header_list_layout" android:background="?contact_browser_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:id="@id/search_view" android:background="@drawable/search_view_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:iconifiedByDefault="false" class="android.widget.SearchView" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <view android:id="@android:id/list" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="?contact_browser_list_padding_left" android:layout_marginRight="?contact_browser_list_padding_right" android:fastScrollEnabled="true" class="com.android.contacts.widget.PinnedHeaderListView" />
+        <view android:id="@id/fast_indexer" android:layout_width="wrap_content" android:layout_height="fill_parent" class="miui.widget.AlphabetFastIndexer" />
+    </FrameLayout>
+</LinearLayout>

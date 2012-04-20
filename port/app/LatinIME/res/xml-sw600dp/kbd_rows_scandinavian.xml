@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin">
+    <include latin:keyboardLayout="@xml/kbd_key_styles" />
+    <Row latin:keyWidth="7.8999996%p">
+        <Key latin:moreKeys="@string/more_keys_for_q" latin:keyLabel="q" />
+        <Key latin:moreKeys="@string/more_keys_for_w" latin:keyLabel="w" />
+        <Key latin:moreKeys="@string/more_keys_for_e" latin:keyLabel="e" />
+        <Key latin:moreKeys="@string/more_keys_for_r" latin:keyLabel="r" />
+        <Key latin:moreKeys="@string/more_keys_for_t" latin:keyLabel="t" />
+        <Key latin:moreKeys="@string/more_keys_for_y" latin:keyLabel="y" />
+        <Key latin:moreKeys="@string/more_keys_for_u" latin:keyLabel="u" />
+        <Key latin:moreKeys="@string/more_keys_for_i" latin:keyLabel="i" />
+        <Key latin:moreKeys="@string/more_keys_for_o" latin:keyLabel="o" />
+        <Key latin:moreKeys="@string/more_keys_for_p" latin:keyLabel="p" />
+        <Key latin:keyLabel="å" />
+        <Key latin:keyStyle="deleteKeyStyle" latin:keyWidth="fillBoth" latin:keyXPos="-10.000002%p" />
+    </Row>
+    <Row latin:keyWidth="7.8999996%p">
+        <Key latin:moreKeys="@string/more_keys_for_a" latin:keyLabel="a" latin:keyXPos="3.4999967%p" />
+        <Key latin:moreKeys="@string/more_keys_for_s" latin:keyLabel="s" />
+        <Key latin:moreKeys="@string/more_keys_for_d" latin:keyLabel="d" />
+        <Key latin:keyLabel="f" />
+        <Key latin:moreKeys="@string/more_keys_for_g" latin:keyLabel="g" />
+        <Key latin:keyLabel="h" />
+        <Key latin:keyLabel="j" />
+        <Key latin:moreKeys="@string/more_keys_for_k" latin:keyLabel="k" />
+        <Key latin:moreKeys="@string/more_keys_for_l" latin:keyLabel="l" />
+        <Key latin:moreKeys="@string/more_keys_for_scandinavia_row2_10" latin:keyLabel="@string/keylabel_for_scandinavia_row2_10" />
+        <Key latin:moreKeys="@string/more_keys_for_scandinavia_row2_11" latin:keyLabel="@string/keylabel_for_scandinavia_row2_11" />
+        <Key latin:keyStyle="returnKeyStyle" latin:keyWidth="fillBoth" latin:keyXPos="-14.600002%p" />
+    </Row>
+    <Row latin:keyWidth="7.8999996%p">
+        <Key latin:keyStyle="shiftKeyStyle" latin:keyWidth="10.000002%p" />
+        <Spacer latin:keyWidth="4.3499947%p" />
+        <Key latin:moreKeys="@string/more_keys_for_z" latin:keyLabel="z" />
+        <Key latin:keyLabel="x" />
+        <Key latin:moreKeys="@string/more_keys_for_c" latin:keyLabel="c" />
+        <Key latin:moreKeys="@string/more_keys_for_v" latin:keyLabel="v" />
+        <Key latin:keyLabel="b" />
+        <Key latin:moreKeys="@string/more_keys_for_n" latin:keyLabel="n" />
+        <Key latin:keyLabel="m" />
+        <include latin:keyboardLayout="@xml/kbd_row3_comma_period" />
+        <Spacer latin:keyWidth="4.3499947%p" />
+        <include latin:keyboardLayout="@xml/kbd_row3_smiley" />
+    </Row>
+    <include latin:keyboardLayout="@xml/kbd_qwerty_row4" />
+</merge>

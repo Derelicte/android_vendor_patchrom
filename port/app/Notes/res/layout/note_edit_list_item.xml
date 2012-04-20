@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:layout_gravity="top|left|center" android:id="@id/cb_edit_item" android:focusable="false" android:layout_width="wrap_content" android:layout_height="28.0dip" android:checked="false" />
+    <com.miui.notes.ui.NoteEditText android:textAppearance="@style/TextAppearancePrimaryItem" android:layout_gravity="center_vertical" android:id="@id/et_edit_text" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.2" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/category_row" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/preview_list_title_text" android:textColor="@color/preview_list_title_text" android:gravity="left" android:id="@id/category_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/preview_wrap" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/category_row" android:layout_alignParentLeft="true">
+        <include android:id="@id/song_item_preview_1" layout="@layout/online_song_item_preview" />
+        <include android:id="@id/song_item_preview_2" layout="@layout/online_song_item_preview" />
+        <include android:id="@id/song_item_preview_3" layout="@layout/online_song_item_preview" />
+        <include android:id="@id/song_item_preview_4" layout="@layout/online_song_item_preview" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="config_maxNotificationIcons">5</integer>
+    <integer name="flash_on_value">100</integer>
+    <integer name="notification_long_press_item_disabled_alpha">20</integer>
+</resources>

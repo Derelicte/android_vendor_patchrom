@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/pinned_header_list_layout" android:background="?contact_browser_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/list_separator" layout="@layout/list_separator" />
+    <ListView android:id="@android:id/list" android:paddingRight="@dimen/picker_favorites_list_padding" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="?contact_browser_list_padding_left" android:divider="@null" android:layout_weight="1.0" android:fastScrollEnabled="true" />
+    <include layout="@layout/picker_list_empty" />
+</LinearLayout>

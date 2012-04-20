@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="curve_color" format="color" />
+    <attr name="curve_shadow_color" format="color" />
+    <attr name="curve_shadow_radius" format="float" />
+    <attr name="sliding_panel" format="reference" />
+    <attr name="sliding_dot_bar" format="reference" />
+    <attr name="sliding_shadow_dot_bar" format="reference" />
+    <attr name="symmetry" format="boolean" />
+    <attr name="alpha_width" format="integer" />
+    <attr name="update_enable" format="boolean" />
+</resources>

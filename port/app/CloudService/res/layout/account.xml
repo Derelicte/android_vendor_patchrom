@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/banner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textColor="@miui:color/android_listseparator_text_holo_light" android:gravity="left|center" android:background="@miui:drawable/android_list_section_divider_holo_light" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" android:text="@string/account_banner" />
+                <TextView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/account" />
+                <EditText android:textAppearance="@android:style/TextAppearance.Small" android:id="@id/login_username_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:hint="@string/account_hint_text" android:inputType="textEmailAddress" />
+                <TextView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/password" />
+                <EditText android:textAppearance="@android:style/TextAppearance.Small" android:id="@id/login_password_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:hint="@string/password_hint" android:inputType="textPassword" />
+                <FrameLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_marginBottom="10.0dip">
+                    <Button android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@id/login_button" android:background="@drawable/login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_xiaomi_account" />
+                    <ProgressBar android:id="@id/login_progressbar" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                </FrameLayout>
+                <TextView android:textColor="@color/html_link" android:layout_gravity="center_horizontal" android:id="@id/forget_password" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/forget_password" />
+            </LinearLayout>
+            <View android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <FrameLayout android:gravity="center_vertical" android:background="@miui:drawable/android_ab_bottom_solid_inverse_holo" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:gravity="center" android:layout_gravity="center" android:id="@id/create_button" android:background="@drawable/create_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_account" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

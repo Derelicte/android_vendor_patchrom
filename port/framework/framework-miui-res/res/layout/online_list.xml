@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/tablayout" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:id="@id/tab_bar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Spinner android:id="@id/categorylist" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="2.0" />
+            <TextView android:gravity="center" android:id="@id/hottest_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/online_hottest" android:layout_weight="1.0" style="@style/TextAppearanceSecondaryTab.Left" />
+            <TextView android:gravity="center" android:id="@id/latest_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/online_latest" android:layout_weight="1.0" style="@style/TextAppearanceSecondaryTab.Right" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/search_bar" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <EditText android:textSize="15.0dip" android:textColor="@android:color/black" android:textColorHint="@color/secondary_tab_text_color" android:gravity="center_vertical" android:layout_gravity="left|center" android:id="@id/search_input" android:background="@drawable/search_input_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/online_search_hint" android:singleLine="true" android:completionThreshold="1" android:layout_weight="1.0" android:layout_centerVertical="true" />
+            <ImageView android:gravity="center" android:layout_gravity="right|center" android:id="@id/search_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_button" android:scaleType="center" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <TextView android:gravity="center" android:id="@id/search_toggle" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@android:string/search_go" />
+    </LinearLayout>
+    <ListView android:id="@id/resourcelist" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" style="@android:style/Widget.Holo.ListView" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/loadingprogressbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="20.0dip">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/Widget.ProgressBar.Small.Inverse" />
+        <TextView android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading" />
+    </LinearLayout>
+</LinearLayout>

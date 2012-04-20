@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="tab_theme" parent="@miui:style/Theme.Light">
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+    </style>
+    <style name="ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:displayOptions"></item>
+    </style>
+    <style name="TextAppearance" />
+    <style name="TextAppearance.Primary" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_font_size_medium</item>
+        <item name="android:textColor">@miui:color/primary_text_holo_light</item>
+    </style>
+    <style name="TextAppearance.Secondary" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_font_size_small</item>
+        <item name="android:textColor">@miui:color/secondary_text_holo_light</item>
+    </style>
+</resources>

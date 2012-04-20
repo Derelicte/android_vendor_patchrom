@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_contact" android:orderInCategory="1" android:title="@string/shortcutContact" android:showAsAction="withText" />
+    <item android:id="@id/menu_paste" android:orderInCategory="1" android:title="@string/callrecordview_menu_paste" android:showAsAction="withText" />
+    <item android:id="@id/menu_filter" android:orderInCategory="1" android:title="@string/callrecordview_menu_show" android:showAsAction="withText" />
+    <item android:id="@id/menu_delete" android:orderInCategory="1" android:showAsAction="withText" />
+    <item android:id="@id/menu_firewall" android:orderInCategory="1" android:title="@miui:string/firewall_setting" android:showAsAction="withText" />
+    <item android:id="@id/menu_setting" android:orderInCategory="1" android:title="@string/callrecordview_menu_settings" android:showAsAction="withText" />
+</menu>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/apply_menu">
+        <item android:icon="@drawable/ic_menu_boot_recovery" android:id="@id/boot_recovery" android:title="@string/boot_recovery" />
+        <item android:icon="@drawable/ic_menu_switch_system" android:id="@id/switch_system" android:title="@string/switch_system" />
+        <item android:icon="@drawable/ic_menu_view_install_log" android:id="@id/view_intall_log" android:title="@string/view_install_log" />
+    </group>
+</menu>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/progress_bg" android:background="@drawable/progress_title_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/result_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/result_succeed" android:scaleType="centerInside" />
+        <TextView android:textSize="50.0sp" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@id/progress_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@id/progress_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" style="@android:style/TextAppearance.Medium" />
+        <TextView android:textColor="@color/half_transparent_white" android:layout_gravity="center_horizontal" android:id="@id/progress_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/backup_hint" android:singleLine="true" />
+    </LinearLayout>
+    <ListView android:id="@id/progress_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" />
+    <FrameLayout android:background="@miui:drawable/android_ab_bottom_solid_inverse_holo" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/button_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:layout_marginRight="48.0dip" android:text="@string/button_cancel" />
+    </FrameLayout>
+</LinearLayout>

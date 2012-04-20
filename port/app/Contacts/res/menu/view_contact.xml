@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_menu_edit" android:id="@id/menu_edit" android:title="@string/menu_editContact" android:alphabeticShortcut="e" android:showAsAction="always" />
+    <item android:icon="@drawable/ic_menu_share_holo_light" android:id="@id/menu_share" android:title="@string/menu_share" android:alphabeticShortcut="s" />
+    <item android:icon="@drawable/ic_menu_trash_holo_light" android:id="@id/menu_delete" android:title="@string/menu_deleteContact" />
+    <item android:icon="@drawable/ic_menu_trash_holo_light" android:id="@id/menu_delete_calllog" android:title="@string/callrecordview_menu_delete" />
+    <item android:icon="@drawable/ic_menu_mark" android:id="@id/menu_set_ringtone" android:title="@string/menu_set_ring_tone" />
+    <item android:icon="@drawable/ic_menu_send_to_desktop" android:id="@id/menu_send_to_desktop" android:title="@string/menu_send_to_desktop" />
+    <item android:id="@id/menu_send_to_voicemail" android:title="@string/menu_redirect_calls_to_vm" android:checkable="true" />
+</menu>

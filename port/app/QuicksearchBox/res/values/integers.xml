@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="num_suggestions_above_keyboard">4</integer>
+    <integer name="max_promoted_suggestions">8</integer>
+    <integer name="max_promoted_results">4</integer>
+    <integer name="max_shortcuts_per_web_source">8</integer>
+    <integer name="max_shortcuts_per_non_web_source">2</integer>
+    <integer name="corpus_selection_dialog_columns">4</integer>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/edit_pop_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/cut" android:text="@string/cut" android:drawableTop="@drawable/cut_selector" style="@style/SingleViewEditActionButton" />
+    <TextView android:id="@id/turn_left" android:text="@string/turn_left" android:drawableTop="@drawable/lturn_selector" style="@style/SingleViewEditActionButton" />
+    <TextView android:id="@id/turn_right" android:text="@string/turn_right" android:drawableTop="@drawable/rturn_selector" style="@style/SingleViewEditActionButton" />
+    <TextView android:id="@id/edit" android:text="@string/edit" android:drawableTop="@drawable/edit_selector" style="@style/SingleViewEditActionButton" />
+    <TextView android:id="@id/more" android:visibility="gone" android:text="@string/more" android:drawableTop="@drawable/more_selector" style="@style/SingleViewEditActionButton" />
+</LinearLayout>

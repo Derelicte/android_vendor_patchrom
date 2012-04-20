@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="58.69998dip">
+                <ImageView android:layout_gravity="center_vertical" android:id="@android:id/icon" android:layout_width="38.0dip" android:layout_height="38.0dip" />
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="18.0sp" android:ellipsize="marquee" android:id="@android:id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@android:style/TextAppearance.Medium" />
+                    <TextView android:textSize="12.0sp" android:id="@android:id/text2" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@android:style/TextAppearance.Medium" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/monitor_settings" style="?android:attr/listSeparatorTextViewStyle" />
+            <com.android.monitor.widget.TrafficDetailPanel android:id="@id/traffic_detail_screens" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textColor="#ffd88d3a" android:gravity="right|center" android:id="@id/foreground" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+                <TextView android:gravity="right|center" android:id="@id/background" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <TextView android:gravity="center_vertical" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/network_control" style="?android:attr/listSeparatorTextViewStyle" />
+            <LinearLayout android:background="@drawable/traffic_list_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/mobile" android:layout_weight="1.0" style="@android:style/TextAppearance.Medium" />
+                <miui.widget.SlidingButton android:layout_gravity="center_vertical" android:id="@id/enableMobile" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:background="@drawable/traffic_list_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/wifi" android:layout_weight="1.0" style="@android:style/TextAppearance.Medium" />
+                <miui.widget.SlidingButton android:layout_gravity="center_vertical" android:id="@id/enableWifi" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:gravity="center_vertical" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/app_detail_control" style="?android:attr/listSeparatorTextViewStyle" />
+            <LinearLayout android:gravity="center_vertical" android:background="@drawable/traffic_list_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/data_usage_restrict_background" style="@android:style/TextAppearance.Medium" />
+                    <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/data_usage_restrict_background_help" style="@android:style/TextAppearance.Small" />
+                </LinearLayout>
+                <miui.widget.SlidingButton android:id="@id/switch_data_usage_restrict_background" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <Button android:id="@id/force_stop" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/force_stop" android:layout_weight="1.0" />
+                <Button android:id="@id/app_detail" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/app_detail" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

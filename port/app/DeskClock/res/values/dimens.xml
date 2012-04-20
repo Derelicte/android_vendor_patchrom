@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="time_text_size">92.0dip</dimen>
+    <dimen name="ampm_text_size">20.0dip</dimen>
+    <dimen name="date_text_size">15.0sp</dimen>
+    <dimen name="next_alarm_text_size">15.0sp</dimen>
+    <dimen name="time_margin_right">48.0dip</dimen>
+    <dimen name="time_margin_bottom">14.0dip</dimen>
+    <dimen name="time_margin_top">16.0dip</dimen>
+    <dimen name="ampm_margin_top">8.0dip</dimen>
+    <dimen name="font_margin_adjust">4.0dip</dimen>
+    <dimen name="next_alarm_margin_top">-4.0dip</dimen>
+    <dimen name="alarm_label_padding">8.0dip</dimen>
+    <dimen name="timer_button_text_margin_left">15.0dip</dimen>
+    <dimen name="timer_ringtone_text_margin_top">-5.0dip</dimen>
+    <dimen name="timer_foot_margin_bottom">12.0dip</dimen>
+    <dimen name="timer_ringtone_button_margin_top">5.0dip</dimen>
+    <dimen name="timer_foot_padding_bottom">8.0dip</dimen>
+    <dimen name="timer_image_right_margin">10.0dip</dimen>
+    <dimen name="timer_foot_width">320.0dip</dimen>
+    <dimen name="watchdial_centerx">160.0dip</dimen>
+    <dimen name="watchdial_centery">164.66998dip</dimen>
+    <dimen name="watchdial_radius">103.32999dip</dimen>
+    <dimen name="timercirque_radiusouter">103.0dip</dimen>
+    <dimen name="timercirque_width">9.329987dip</dimen>
+    <dimen name="timercirque_startx">56.0dip</dimen>
+    <dimen name="timercirque_starty">58.0dip</dimen>
+    <dimen name="tailcirque_startx">50.669983dip</dimen>
+    <dimen name="tailcirque_starty">53.329987dip</dimen>
+    <dimen name="center_x">108.66998dip</dimen>
+    <dimen name="center_y">108.66998dip</dimen>
+    <dimen name="radius">108.66998dip</dimen>
+    <dimen name="slipcirque_radiusinner">33.329987dip</dimen>
+    <dimen name="slipcirque_radiusouter">166.66998dip</dimen>
+    <dimen name="slipblock_radius">29.329987dip</dimen>
+</resources>

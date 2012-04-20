@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="12" android:versionName="1.2" package="com.miui.bugreport"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <application android:label="@string/app_label">
+        <activity android:theme="@android:style/Theme.Holo.Light" android:label="@string/app_label" android:icon="@drawable/icon" android:name="BugReportActivity" android:configChanges="orientation|screenSize" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Holo.Light" android:name="PreviewActivity" android:configChanges="orientation|screenSize" android:uiOptions="splitActionBarWhenNarrow" />
+    </application>
+</manifest>

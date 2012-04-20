@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="categorylist">false</item>
+    <item type="id" name="componentDetail">false</item>
+    <item type="id" name="componentNumber">false</item>
+    <item type="id" name="componentGrid">false</item>
+    <item type="id" name="title">false</item>
+    <item type="id" name="grid">false</item>
+    <item type="id" name="check">false</item>
+    <item type="id" name="summary">false</item>
+    <item type="id" name="backup_button">false</item>
+    <item type="id" name="click">false</item>
+    <item type="id" name="image_frame">false</item>
+    <item type="id" name="bottom_image">false</item>
+    <item type="id" name="top_image">false</item>
+</resources>

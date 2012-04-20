@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/camera_key_action_setting_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/camera_key_action_category_title">
+        <Preference android:icon="@drawable/ic_inactive" android:persistent="false" android:title="@string/camera_key_action_none_title" android:key="camera_key_action_none" />
+        <Preference android:icon="@drawable/ic_inactive" android:persistent="false" android:title="@string/camera_key_action_shortcut_title" android:key="camera_key_action_shortcut">
+            <intent android:targetPackage="com.android.systemui" android:targetClass="com.android.systemui.settings.CameraKeyActionShortcutPicker" />
+        </Preference>
+        <Preference android:icon="@drawable/ic_inactive" android:persistent="false" android:title="@string/camera_key_action_toggle_title" android:key="camera_key_action_toggle">
+            <intent android:targetPackage="com.android.systemui" android:targetClass="com.android.systemui.settings.CameraKeyActionTogglePicker" />
+        </Preference>
+        <Preference android:icon="@drawable/ic_inactive" android:persistent="false" android:title="@string/camera_key_action_app_title" android:key="camera_key_action_app">
+            <intent android:targetPackage="com.android.systemui" android:targetClass="com.android.systemui.settings.CameraKeyActionAppPicker" />
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

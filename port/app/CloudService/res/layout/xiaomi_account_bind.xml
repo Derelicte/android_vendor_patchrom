@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@miui:color/android_listseparator_text_holo_light" android:id="@id/description" android:background="@miui:drawable/android_list_section_divider_holo_light" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/user_phone_description" />
+    <EditText android:textAppearance="@android:style/TextAppearance.Small" android:id="@id/edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <Button android:id="@id/verify_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/user_phone_button_verify" />
+</LinearLayout>

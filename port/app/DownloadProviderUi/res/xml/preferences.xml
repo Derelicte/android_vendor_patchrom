@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_download_settings_title">
+        <CheckBoxPreference android:persistent="false" android:title="@string/pref_title_enable_max_bytes_popup" android:key="pref_key_enable_max_bytes_popup" android:summary="@string/pref_summary_enable_max_bytes_popup" android:defaultValue="true" />
+        <ListPreference android:entries="@array/prefEntries_max_bytes_limit" android:layout="?android:preferenceLayoutChild" android:title="@string/pref_title_max_bytes_limit" android:key="pref_key_max_bytes" android:dependency="pref_key_enable_max_bytes_popup" android:defaultValue="@string/prefDefault_max_bytes_limit" android:dialogTitle="@string/pref_dialog_title_max_bytes_limit" android:entryValues="@array/prefValues_max_bytes_limit" />
+    </PreferenceCategory>
+</PreferenceScreen>

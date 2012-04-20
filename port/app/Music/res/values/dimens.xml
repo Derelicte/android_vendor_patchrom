@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="action_bar_height">50.0dip</dimen>
+    <dimen name="spacing_left">13.329987dip</dimen>
+    <dimen name="spacing_to_border">13.329987dip</dimen>
+    <dimen name="spacing_picker_list">13.329987dip</dimen>
+    <dimen name="spacing_picker_item">6.669983dip</dimen>
+    <dimen name="bottom_bar_text">18.0dip</dimen>
+    <dimen name="current_album_height">240.0dip</dimen>
+    <dimen name="history_album_space">2.0px</dimen>
+    <dimen name="recently_album_width">80.0dip</dimen>
+    <dimen name="title_primary_text">16.0sp</dimen>
+    <dimen name="title_secondary_text">12.0sp</dimen>
+    <dimen name="item_primary_text">17.329987sp</dimen>
+    <dimen name="item_secondary_text">12.0sp</dimen>
+    <dimen name="item_text_width">220.0dip</dimen>
+    <dimen name="main_item_horizontal_space">13.329987dip</dimen>
+    <dimen name="preview_list_title_text">14.0sp</dimen>
+    <dimen name="preview_item_descript_text">10.0sp</dimen>
+    <dimen name="preview_item_num_text">12.0sp</dimen>
+    <dimen name="preview_item_title_text">12.0sp</dimen>
+    <dimen name="alphabet_indexer_overlay_text_size">28.0dip</dimen>
+    <dimen name="alphabet_indexer_overlay_padding_top">5.0dip</dimen>
+    <dimen name="alphabet_indexer_overlay_offset">20.0dip</dimen>
+    <dimen name="alphabet_indexer_text_size">12.0dip</dimen>
+    <dimen name="lyric_line_extra_spacing">24.0dip</dimen>
+    <dimen name="nowplaying_item_padding">6.669983dip</dimen>
+    <dimen name="widget_4x1_size">62.0dip</dimen>
+    <dimen name="album_corner_radius">6.666992dip</dimen>
+    <dimen name="multi_choice_text">17.329987sp</dimen>
+    <dimen name="equalizer_seek_bar_height">336.0dip</dimen>
+    <dimen name="volume_seek_bar_margin">18.0dip</dimen>
+    <dimen name="first_equalizer_seek_bar_margin">34.0dip</dimen>
+    <dimen name="equalizer_seek_bar_margin">6.0dip</dimen>
+    <dimen name="catetory_spacing">6.666992dip</dimen>
+</resources>

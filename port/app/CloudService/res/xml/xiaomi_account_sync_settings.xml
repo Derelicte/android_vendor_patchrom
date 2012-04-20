@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/basic_info" android:key="pref_category_user_account">
+        <Preference android:persistent="false" android:title="@string/user_id" android:key="pref_key_user_id" />
+        <Preference android:title="@string/user_nickname" android:key="pref_key_user_nickname" />
+        <Preference android:title="@string/user_email" android:key="pref_key_user_email" />
+        <Preference android:title="@string/user_phone" android:key="pref_key_user_phone" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sync_info" android:key="pref_category_user_mitalk">
+        <Preference android:title="@string/user_detail" android:key="pref_key_user_detail" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/user_mitalk_sync_title" android:key="pref_key_user_mitalk_sync" android:summary="@string/user_mitalk_sync_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

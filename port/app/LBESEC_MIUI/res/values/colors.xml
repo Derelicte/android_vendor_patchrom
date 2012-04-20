@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="header_background">#ffededed</color>
+    <color name="header_background_dim">#ffd4d4d4</color>
+    <color name="pinned_header_background">#ffe8e8e8</color>
+    <color name="separator_background">#ffff7e00</color>
+    <color name="transparent_dialog_background">#d8000000</color>
+    <color name="textcolor_white">#ffffffff</color>
+    <color name="textcolor_orange">#ffff8a00</color>
+</resources>

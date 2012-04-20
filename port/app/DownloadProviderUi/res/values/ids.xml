@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="navigation_bar">false</item>
+    <item type="id" name="selection_menu">false</item>
+    <item type="id" name="date_ordered_list">false</item>
+    <item type="id" name="empty">false</item>
+    <item type="id" name="download_icon">false</item>
+    <item type="id" name="download_title_and_progress">false</item>
+    <item type="id" name="download_title">false</item>
+    <item type="id" name="download_progress">false</item>
+    <item type="id" name="size_info">false</item>
+    <item type="id" name="status_info">false</item>
+    <item type="id" name="date_info">false</item>
+    <item type="id" name="action_layout">false</item>
+    <item type="id" name="action_button">false</item>
+    <item type="id" name="download_checkbox">false</item>
+    <item type="id" name="bottom_wifi_control_bar">false</item>
+    <item type="id" name="btn_download_only_in_wifi">false</item>
+    <item type="id" name="share_download">false</item>
+    <item type="id" name="delete_download">false</item>
+    <item type="id" name="download_only_in_wifi">false</item>
+    <item type="id" name="download_menu_delete_downloads_records">false</item>
+    <item type="id" name="download_menu_settings">false</item>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/page_padding" android:paddingRight="@dimen/page_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip">
+        <TextView android:textAppearance="@android:style/TextAppearance.Medium" android:id="@id/log_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="APP NAME" android:layout_weight="1.0" />
+        <TextView android:textAppearance="@android:style/TextAppearance.Small" android:id="@id/log_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ACTION" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip">
+        <TextView android:textAppearance="@android:style/TextAppearance.Small" android:id="@id/log_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TYPE" android:layout_weight="1.0" />
+        <TextView android:textAppearance="@android:style/TextAppearance.Small" android:id="@id/log_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TIME" />
+    </LinearLayout>
+    <View android:background="?android:dividerVertical" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

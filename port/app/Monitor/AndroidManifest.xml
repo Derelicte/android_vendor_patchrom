@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.system" android:versionCode="15" android:versionName="4.0.4-eng.yumingyang.20120419.163633" package="com.android.monitor"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIMAX_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIMAX_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <application android:label="@string/app_name" android:icon="@drawable/monitor">
+        <activity android:theme="@android:style/Theme.Holo.Light" android:name=".MainActivity" android:configChanges="keyboardHidden|orientation" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MONITOR" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@miui:style/Theme.Light" android:label="@string/app_detail" android:name=".UidDetailActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.Dialog" android:label="@string/app_name" android:name=".ApplyRulesAlertActivity" android:launchMode="singleTask" />
+        <service android:name=".net.TrafficService" />
+        <receiver android:name=".BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

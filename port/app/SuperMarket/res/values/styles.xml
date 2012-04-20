@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="UserTab">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="UserTab.Upper" parent="@style/UserTab">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/upper_user_tab_color</item>
+        <item name="android:background">@drawable/upper_user_tab</item>
+    </style>
+    <style name="UserTab.Lower" parent="@style/UserTab">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@android:color/secondary_text_light</item>
+        <item name="android:background">@drawable/lower_user_tab</item>
+    </style>
+    <style name="CareBtn">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:paddingRight">15.0dip</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">36.0dip</item>
+    </style>
+    <style name="CareBtn.Cancel" parent="@style/CareBtn">
+        <item name="android:background">@miui:drawable/android_btn_default_normal</item>
+    </style>
+    <style name="CareBtn.Add" parent="@style/CareBtn">
+        <item name="android:background">@miui:drawable/android_btn_default_pressed</item>
+    </style>
+    <style name="PopDownText">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">39.0dip</item>
+        <item name="android:paddingRight">39.0dip</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>

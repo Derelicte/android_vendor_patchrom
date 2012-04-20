@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin">
+    <switch>
+        <case latin:mode="email">
+            <Key latin:keyLabel="-" />
+        </case>
+        <case latin:mode="url">
+            <Key latin:moreKeys=":" latin:keyLabel="/" latin:keyHintLabel=":" latin:keyLabelOption="hasUppercaseLetter" />
+        </case>
+        <default>
+            <Key latin:moreKeys="@string/more_keys_for_apostrophe" latin:keyLabel="@string/keylabel_for_apostrophe" latin:keyHintLabel="@string/keyhintlabel_for_apostrophe" latin:keyLabelOption="hasUppercaseLetter" />
+        </default>
+    </switch>
+    <switch>
+        <case latin:mode="email">
+            <Key latin:keyLabel="_" />
+        </case>
+        <default>
+            <Key latin:moreKeys="@string/more_keys_for_dash" latin:keyLabel="@string/keylabel_for_dash" latin:keyHintLabel="@string/keyhintlabel_for_dash" latin:keyLabelOption="hasUppercaseLetter" />
+        </default>
+    </switch>
+</merge>

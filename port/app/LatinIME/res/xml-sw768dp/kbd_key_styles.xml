@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin">
+    <key-style latin:code="@integer/key_shift" latin:backgroundType="sticky" latin:keyIcon="iconShiftKey" latin:keyIconShifted="iconShiftedShiftKey" latin:styleName="shiftKeyStyle" />
+    <key-style latin:code="@integer/key_delete" latin:backgroundType="functional" latin:isRepeatable="true" latin:keyIcon="iconDeleteKey" latin:styleName="deleteKeyStyle" />
+    <key-style latin:code="@integer/key_return" latin:backgroundType="functional" latin:keyIcon="iconReturnKey" latin:styleName="returnKeyStyle" />
+    <key-style latin:code="@integer/key_space" latin:styleName="spaceKeyStyle" />
+    <key-style latin:code="@integer/key_space" latin:styleName="nonSpecialBackgroundSpaceKeyStyle" />
+    <key-style latin:moreKeys="@string/more_keys_for_smiley" latin:maxMoreKeysColumn="5" latin:keyOutputText=":-) " latin:keyLabel=":-)" latin:keyLabelOption="hasPopupHint" latin:styleName="smileyKeyStyle" />
+    <key-style latin:code="@integer/key_settings" latin:backgroundType="functional" latin:keyIcon="iconSettingsKey" latin:styleName="settingsKeyStyle" />
+    <key-style latin:code="@integer/key_shortcut" latin:backgroundType="functional" latin:keyIcon="iconShortcutKey" latin:styleName="shortcutKeyStyle" />
+    <key-style latin:code="@integer/key_tab" latin:backgroundType="functional" latin:keyLabel="@string/label_tab_key" latin:keyLabelOption="fontNormal" latin:styleName="tabKeyStyle" />
+    <key-style latin:code="@integer/key_switch_alpha_symbol" latin:backgroundType="functional" latin:keyLabel="@string/label_to_symbol_key" latin:keyLabelOption="fontNormal" latin:styleName="toSymbolKeyStyle" />
+    <key-style latin:code="@integer/key_switch_alpha_symbol" latin:backgroundType="functional" latin:keyLabel="@string/label_to_alpha_key" latin:keyLabelOption="fontNormal" latin:styleName="toAlphaKeyStyle" />
+    <key-style latin:code="@integer/key_shift" latin:backgroundType="functional" latin:keyLabel="@string/label_to_more_symbol_for_tablet_key" latin:keyLabelOption="fontNormal" latin:styleName="toMoreSymbolKeyStyle" />
+    <key-style latin:code="@integer/key_shift" latin:backgroundType="functional" latin:keyLabel="@string/label_to_symbol_key" latin:keyLabelOption="fontNormal" latin:styleName="backFromMoreSymbolKeyStyle" />
+    <key-style latin:moreKeys="@string/more_keys_for_popular_domain" latin:keyOutputText="@string/keylabel_for_popular_domain" latin:keyLabel="@string/keylabel_for_popular_domain" latin:keyLabelOption="fontNormal|hasPopupHint" latin:styleName="comKeyStyle" />
+</merge>

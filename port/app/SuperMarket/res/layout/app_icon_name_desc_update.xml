@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:layout_weight="1.0" layout="@layout/app_icon_name_desc" />
+    <TextView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/update_icon" android:background="@drawable/update_app" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="?android:scrollbarSize" android:text="@string/update_btn_text" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/downloading_icon" android:background="@drawable/app_downloading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="?android:scrollbarSize" android:scaleType="centerInside" />
+</LinearLayout>

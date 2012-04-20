@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/main" android:background="@drawable/dialer_list_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/digits_container" android:background="@drawable/dialer_digits_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.android.contacts.dialpad.DigitsEditText android:ellipsize="start" android:layout_gravity="right|center" android:id="@id/digits" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/TextStyleDialerDigits" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:ellipsize="end" android:gravity="right" android:layout_gravity="bottom|left|center" android:id="@id/digits_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="6.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <EditableListView android:scrollbarStyle="outsideOverlay" android:layout_gravity="top|left|center" android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:choiceMode="multipleChoiceModal" />
+            <include layout="@layout/yellow_page_header" />
+            <include layout="@layout/dialer_list_empty" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:id="@id/dialHideContainer" android:background="@drawable/dialer_bottom_bar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/goto_contact2" android:background="@drawable/btn_goto_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <miui.widget.ImageTextButton android:gravity="center" android:id="@id/dialHideT9KeyTip" android:background="@drawable/btn_open_dialer" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/openDialKeyboard" android:drawableLeft="@drawable/dialer_bottom" android:layout_weight="1.0" style="@style/TextStyleOpenDailerButton" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/dailer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.android.contacts.dialpad.DialerButtons android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/background" android:background="@drawable/dialer_background" android:layout_width="fill_parent" android:layout_height="238.0dip">
+                <LinearLayout style="@style/DialerButtonRow">
+                    <View android:id="@id/one" android:contentDescription="@string/description_image_button_one" style="@style/DialerButton" />
+                    <View android:id="@id/two" android:contentDescription="@string/description_image_button_two" style="@style/DialerButton" />
+                    <View android:id="@id/three" android:contentDescription="@string/description_image_button_three" style="@style/DialerButton" />
+                </LinearLayout>
+                <LinearLayout style="@style/DialerButtonRow">
+                    <View android:id="@id/four" android:contentDescription="@string/description_image_button_four" style="@style/DialerButton" />
+                    <View android:id="@id/five" android:contentDescription="@string/description_image_button_five" style="@style/DialerButton" />
+                    <View android:id="@id/six" android:contentDescription="@string/description_image_button_six" style="@style/DialerButton" />
+                </LinearLayout>
+                <LinearLayout style="@style/DialerButtonRow">
+                    <View android:id="@id/seven" android:contentDescription="@string/description_image_button_seven" style="@style/DialerButton" />
+                    <View android:id="@id/eight" android:contentDescription="@string/description_image_button_eight" style="@style/DialerButton" />
+                    <View android:id="@id/nine" android:contentDescription="@string/description_image_button_nine" style="@style/DialerButton" />
+                </LinearLayout>
+                <LinearLayout style="@style/DialerButtonRow">
+                    <View android:id="@id/star" android:contentDescription="@string/description_image_button_star" style="@style/DialerButton" />
+                    <View android:id="@id/zero" android:contentDescription="@string/description_image_button_zero" style="@style/DialerButton" />
+                    <View android:id="@id/pound" android:contentDescription="@string/description_image_button_pound" style="@style/DialerButton" />
+                </LinearLayout>
+            </com.android.contacts.dialpad.DialerButtons>
+            <View android:layout_gravity="bottom" android:id="@id/buttons" android:background="@drawable/dialer_buttons" android:layout_width="fill_parent" android:layout_height="231.0dip" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/dialer_bottom_bar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/goto_contact" android:background="@drawable/btn_goto_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hapticFeedbackEnabled="true" />
+            <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/call" android:background="@drawable/btn_call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hapticFeedbackEnabled="true" />
+            </LinearLayout>
+            <Button android:id="@id/delete" android:background="@drawable/btn_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hapticFeedbackEnabled="true" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

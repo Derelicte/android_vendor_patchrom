@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="?android:dividerHorizontal" android:showDividers="middle" android:dividerPadding="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <EditableListView android:id="@id/date_ordered_list" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/empty" android:layout="@layout/no_downloads" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </FrameLayout>
+</LinearLayout>

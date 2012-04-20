@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/miui_title" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="left|center" android:layout_gravity="left|center" android:orientation="vertical" android:id="@id/new_update_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip">
+            <TextView android:textColor="@color/new_version_title" android:ellipsize="marquee" android:gravity="left|center" android:background="@drawable/new_update_content_title_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/new_update_content_title" android:singleLine="true" style="@style/TextAppearance.Small" />
+            <LinearLayout android:gravity="left|center" android:layout_gravity="left|center" android:paddingLeft="20.0dip" android:paddingTop="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:ellipsize="marquee" android:gravity="left" android:id="@id/new_update_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/TextAppearance.Medium" />
+                <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="left|center" android:layout_gravity="left|center" android:orientation="vertical" android:id="@id/title_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textColor="@color/transparent_40_black" android:ellipsize="marquee" android:gravity="left|center" android:background="@drawable/current_version_title_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/current_version_text" style="@style/TextAppearance.Small" />
+            <LinearLayout android:gravity="left|center" android:layout_gravity="left|center" android:paddingLeft="20.0dip" android:paddingTop="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:ellipsize="marquee" android:gravity="left|center" android:id="@id/rom_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/TextAppearance.Medium" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/transparent_40_black" android:gravity="center" android:layout_gravity="center" android:id="@id/sign_in_info" android:background="@drawable/account_info_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/add_account" android:background="@drawable/account_info_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/login_indicator" />
+            <TextView android:ellipsize="marquee" android:gravity="left|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:text="@string/sign_in_add_account_helper" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

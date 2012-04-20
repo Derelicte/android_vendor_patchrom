@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="15" android:versionName="4.0.4-eng.yumingyang.20120419.163633" coreApp="true" package="com.android.inputmethod.latin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <application android:label="@string/english_ime_name" android:icon="@drawable/ic_ime_settings" android:backupAgent="BackupAgent" android:killAfterRestore="false">
+        <service android:label="@string/english_ime_name" android:name="LatinIME" android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+            <meta-data android:name="android.view.im" android:resource="@xml/method" />
+        </service>
+        <service android:label="@string/spell_checker_service_name" android:name=".spellcheck.AndroidSpellCheckerService" android:permission="android.permission.BIND_TEXT_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.textservice.SpellCheckerService" />
+            </intent-filter>
+            <meta-data android:name="android.view.textservice.scs" android:resource="@xml/spellchecker" />
+        </service>
+        <activity android:label="@string/english_ime_settings" android:name="Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/android_spell_checker_settings" android:name="com.android.inputmethod.latin.spellcheck.SpellCheckerSettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/english_ime_debug_settings" android:name="DebugSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/language_selection_title" android:name="com.android.inputmethod.deprecated.languageswitcher.InputLanguageSelection">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.android.inputmethod.latin.INPUT_LANGUAGE_SELECTION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="SuggestionSpanPickedNotificationReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.text.style.SUGGESTION_PICKED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/dialer_list_call_photo_hide" android:focusable="false" android:layout_width="@dimen/call_log_contact_photo_width" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:focusable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_toLeftOf="@id/list_item_right" android:layout_toRightOf="@id/dialer_list_call_photo_hide" android:layout_centerVertical="true">
+        <TextView android:textAppearance="@miui:style/TextAppearance.ListView.SecondaryItem" android:id="@id/number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:singleLine="true" android:layout_alignParentLeft="true" />
+        <TextView android:textAppearance="@miui:style/TextAppearance.ListView.SecondaryItem" android:id="@id/telocation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/list_item_right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/contact_detail_action" android:background="@miui:drawable/list_item_detail_arrow" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:id="@android:id/checkbox" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

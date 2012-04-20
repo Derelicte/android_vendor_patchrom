@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<miui.app.resourcebrowser.view.ResourceOperationView android:orientation="vertical" android:id="@id/operationBar" android:background="@drawable/resource_operation_view_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/downloadProgress" android:visibility="gone" android:layout_width="200.0dip" android:layout_height="wrap_content" style="?android:attr/progressBarStyleHorizontal" />
+    <RelativeLayout android:id="@id/operationView" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/magicButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/resource_component" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="134.0dip" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <Button android:gravity="center" android:id="@id/downloadButton" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <Button android:gravity="center" android:id="@id/applyButton" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ImageView android:id="@id/deleteButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/resource_delete" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</miui.app.resourcebrowser.view.ResourceOperationView>

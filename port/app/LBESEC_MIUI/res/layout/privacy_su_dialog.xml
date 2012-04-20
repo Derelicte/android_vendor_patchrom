@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/transparent_dialog_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/parentPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/topPanel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/title_template" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_dialog_alert" />
+                <TextView android:textColor="@color/textcolor_orange" android:ellipsize="end" android:id="@id/alertTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/HIPS_SecurityPrompt_Caption" android:singleLine="true" style="?android:attr/textAppearanceLarge" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/contentPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textColor="@color/textcolor_white" android:id="@id/event_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/page_padding" android:layout_marginBottom="@dimen/page_padding" style="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+        <View android:id="@id/titleDividerTop" android:background="@color/textcolor_orange" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/buttonPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_vertical" android:measureWithLargestChild="true" android:showDividers="middle" android:dividerPadding="@dimen/page_padding" style="?android:attr/buttonBarStyle">
+                <Button android:textColor="@color/textcolor_white" android:id="@id/reject" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="50.0dip" android:text="@string/HIPS_Action_Reject" android:maxLines="2" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+                <Button android:textColor="@color/textcolor_white" android:id="@id/accept" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="50.0dip" android:text="@string/HIPS_Action_Accept" android:maxLines="2" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

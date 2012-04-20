@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/nickname" />
+            <EditText android:textAppearance="@android:style/TextAppearance.Small" android:id="@id/nickname_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/user_nickname_hint" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/password" />
+            <EditText android:textAppearance="@android:style/TextAppearance.Small" android:id="@id/login_password_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/password_hint_text" />
+            <CheckBox android:textAppearance="@android:style/TextAppearance.Medium" android:layout_gravity="left|center" android:id="@id/show_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-10.0dip" android:checked="true" android:text="@string/show_password" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/prev_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/prev" android:layout_weight="1.0" />
+                <Button android:id="@id/next_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/next" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <include layout="@layout/passport_web" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

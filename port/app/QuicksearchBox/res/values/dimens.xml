@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="suggestion_group_spacing">28.0dip</dimen>
+    <dimen name="suggestion_view_height">56.0dip</dimen>
+    <dimen name="suggestion_icon_size">48.0dip</dimen>
+    <dimen name="suggestion_text1_size">16.0sp</dimen>
+    <dimen name="suggestion_text2_size">13.0sp</dimen>
+    <dimen name="suggestion_text2_height">28.0dip</dimen>
+    <item type="dimen" name="APKTOOL_DUMMY_0006">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0007">false</item>
+</resources>

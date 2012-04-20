@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.system" android:versionCode="15" android:versionName="4.0.4-eng.yumingyang.20120419.163633" package="com.miui.cloudservice"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="15" />
+    <application android:theme="@android:style/Theme.Holo.Light" android:label="@string/app_name" android:icon="@drawable/icon" android:uiOptions="splitActionBarWhenNarrow">
+        <service android:label="@string/service_name" android:icon="@drawable/icon" android:name=".authenticator.AuthenticatorService" android:exported="true">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator" />
+        </service>
+        <service android:name=".ContactsSyncAdapterService" android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/syncadapter_contacts" />
+        </service>
+        <activity android:theme="@android:style/Theme.Holo.Light.NoActionBar" android:name=".authenticator.Authenticator$AddAccountActivity" android:exported="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/UpDownActivity" android:label="@string/new_account" android:name=".authenticator.Authenticator$NewAccountVercodeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@miui:style/Theme.Light" android:label="@string/new_account" android:name=".authenticator.Authenticator$NewAccountRegisterActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.Dialog" android:name=".authenticator.AccountExpiredAlertActivity" android:exported="true" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.account.expired" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/sync_settings" android:name=".authenticator.Authenticator$XiaomiAccountSyncSettingsActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.settings.XIAOMI_ACCOUNT_SYNC_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/user_phone_title" android:name=".authenticator.Authenticator$XiaomiAccountBindActivity" android:exported="true" android:windowSoftInputMode="stateVisible">
+            <intent-filter>
+                <action android:name="android.settings.XIAOMI_ACCOUNT_BIND_NICKNAME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+</manifest>

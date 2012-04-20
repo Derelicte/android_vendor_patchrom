@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/list_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:divider="@null" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@android:id/empty" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/list_empty_image" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorSecondary" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/label_no_duplicate_contacts" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/removeDuplicate" android:background="@miui:drawable/android_ab_bottom_solid_inverse_holo" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/button_cancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@android:string/cancel" android:layout_weight="1.0" />
+        <Button android:id="@id/button_ok" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/delete_duplicate" android:layout_weight="1.0" />
+        <Button android:id="@id/button_merge" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/delete_duplicate" android:layout_weight="1.0" />
+        <Button android:id="@id/button_check_all" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/select_all" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="half_transparent_white">#80ffffff</color>
+    <color name="text_color_backup_success">#80323232</color>
+    <color name="red">#ffff0000</color>
+</resources>

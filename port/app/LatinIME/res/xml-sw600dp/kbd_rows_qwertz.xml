@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin">
+    <include latin:keyboardLayout="@xml/kbd_key_styles" />
+    <Row latin:keyWidth="9.000004%p">
+        <Key latin:moreKeys="@string/more_keys_for_q" latin:keyLabel="q" />
+        <Key latin:moreKeys="@string/more_keys_for_w" latin:keyLabel="w" />
+        <Key latin:moreKeys="@string/more_keys_for_e" latin:keyLabel="e" />
+        <Key latin:moreKeys="@string/more_keys_for_r" latin:keyLabel="r" />
+        <Key latin:moreKeys="@string/more_keys_for_t" latin:keyLabel="t" />
+        <Key latin:moreKeys="@string/more_keys_for_z" latin:keyLabel="z" />
+        <Key latin:moreKeys="@string/more_keys_for_u" latin:keyLabel="u" />
+        <Key latin:moreKeys="@string/more_keys_for_i" latin:keyLabel="i" />
+        <Key latin:moreKeys="@string/more_keys_for_o" latin:keyLabel="o" />
+        <Key latin:moreKeys="@string/more_keys_for_p" latin:keyLabel="p" />
+        <Key latin:keyStyle="deleteKeyStyle" latin:keyWidth="fillBoth" latin:keyXPos="-10.000002%p" />
+    </Row>
+    <include latin:keyboardLayout="@xml/kbd_qwerty_row2" />
+    <Row latin:keyWidth="8.899999%p">
+        <Key latin:keyStyle="shiftKeyStyle" latin:keyWidth="10.000002%p" />
+        <Key latin:moreKeys="@string/more_keys_for_y" latin:keyLabel="y" />
+        <Key latin:keyLabel="x" />
+        <Key latin:moreKeys="@string/more_keys_for_c" latin:keyLabel="c" />
+        <Key latin:moreKeys="@string/more_keys_for_v" latin:keyLabel="v" />
+        <Key latin:keyLabel="b" />
+        <Key latin:moreKeys="@string/more_keys_for_n" latin:keyLabel="n" />
+        <Key latin:keyLabel="m" />
+        <switch>
+            <case latin:mode="email">
+                <Key latin:keyLabel="," />
+                <Key latin:keyLabel="." />
+            </case>
+            <default>
+                <Key latin:moreKeys="!" latin:keyLabel="," latin:keyHintLabel="!" latin:keyLabelOption="hasUppercaseLetter" />
+                <Key latin:moreKeys="\?" latin:keyLabel="." latin:keyHintLabel="\?" latin:keyLabelOption="hasUppercaseLetter" />
+            </default>
+        </switch>
+        <include latin:keyboardLayout="@xml/kbd_row3_smiley" />
+    </Row>
+    <include latin:keyboardLayout="@xml/kbd_qwerty_row4" />
+</merge>

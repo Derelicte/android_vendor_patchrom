@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/music_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/mobile_connect_settings">
+        <CheckBoxPreference android:title="@string/download_album_settings" android:key="other_connect_album" android:summary="@string/download_album_summary" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/download_lyric_settings" android:key="other_connect_lyric" android:summary="@string/download_lyric_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/listen_to_music_online_settings" android:key="other_connect_listen" android:summary="@string/listen_to_online_summary" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/flow_save_hint" android:key="flow_save_hint" android:summary="@string/flow_save_hint_summary" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/music_filter" android:key="music_filter">
+        <com.miui.player.ui.view.SeekBarPreference android:key="min_music_filter_size" android:defaultValue="819600" />
+        <com.miui.player.ui.FolderSelectDialog android:title="@string/filter_by_folder" android:key="filter_music_folder" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/other_settings">
+        <CheckBoxPreference android:title="@string/android_album_settings" android:key="android_album" android:summary="@string/android_album_summary" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/play_and_download" android:key="play_and_download" android:summary="@string/play_and_download_summary" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/screen_bright_wake" android:key="screen_bright_wake" android:summary="@string/screen_bright_wake_summary" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/keep_quit_position_settings" android:key="keep_quit_location" android:summary="@string/keep_quit_position_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/shake_settings" android:key="shake" android:summary="@string/shake_summary" android:defaultValue="false" />
+        <com.miui.player.ui.ShakeSensitivityAdjustDialog android:title="@string/shake_sensitivity_settings" android:key="shake_degree" android:summary="@string/shake_sensitivity_summary" android:dependency="shake" />
+        <CheckBoxPreference android:title="@string/lyric_display_settings" android:key="display_lyric" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/album_display_settings" android:key="display_album" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/spectrogram_display_settings" android:key="display_spectrogram" android:summary="@string/spectrogram_display_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/fade_effect_settings" android:key="fade_effect_active" android:summary="@string/fade_effect_summary" android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

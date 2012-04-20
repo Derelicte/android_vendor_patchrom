@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:gravity="center_vertical" android:id="@id/dashboard_monitorcount" android:background="@color/header_background" android:paddingLeft="@dimen/page_padding" android:paddingRight="@dimen/page_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip" android:text="TextView" style="@android:style/TextAppearance.Small" />
+        <View android:background="@color/header_background_dim" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="vertical" android:id="@id/dashboard_group_other" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

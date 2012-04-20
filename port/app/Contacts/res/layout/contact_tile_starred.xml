@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:background="?android:selectableItemBackground" android:focusable="true" android:nextFocusRight="@id/contact_tile_quick" class="com.android.contacts.list.ContactTileView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/contact_list_margin_left" android:layout_marginRight="@dimen/contact_list_margin_right">
+        <view android:id="@id/image_container" android:layout_width="@dimen/contact_browser_list_item_photo_size" android:layout_height="@dimen/contact_browser_list_item_photo_height" class="com.android.contacts.list.ContactTileImageContainer">
+            <QuickContactBadge android:id="@id/contact_tile_quick" android:paddingTop="@dimen/list_item_photo_padding" android:paddingBottom="@dimen/list_item_photo_padding" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:cropToPadding="true" />
+        </view>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="8.0dip" android:layout_width="0.0dip" android:layout_height="64.0dip" android:layout_weight="1.0">
+            <TextView android:textAppearance="@miui:style/TextAppearance.ListView.PrimaryItem" android:ellipsize="marquee" android:id="@id/contact_tile_name" android:fadingEdge="horizontal" android:fadingEdgeLength="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textAppearance="@miui:style/TextAppearance.ListView.SecondaryItem" android:ellipsize="marquee" android:id="@id/contact_tile_status" android:fadingEdge="horizontal" android:fadingEdgeLength="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="4.0dip" />
+        </LinearLayout>
+        <View android:id="@id/contact_tile_horizontal_divider" android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <View android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/contact_list_margin_left" android:layout_marginRight="@dimen/contact_list_margin_right" />
+</view>

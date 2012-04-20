@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/contact_detail_action_bar_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:id="@id/home_key" android:background="@drawable/action_bar_home" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="63.0dip" android:layout_weight="1.0">
+        <TextView android:textAppearance="@miui:style/TextAppearance.ListView.PrimaryItem" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textAppearance="@miui:style/TextAppearance.ListView.SecondaryItem" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/action_bar_photo" android:layout_width="@dimen/small_photo_size" android:layout_height="@dimen/small_photo_size" android:scaleType="centerCrop" />
+</LinearLayout>

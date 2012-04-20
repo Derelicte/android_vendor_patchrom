@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/MusicActivityStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/sd_error" />
+    <LinearLayout android:gravity="top|right|center" android:orientation="vertical" android:id="@id/current_album" android:layout_width="fill_parent" android:layout_height="@dimen/current_album_height">
+        <View android:background="@drawable/history_divider" android:layout_width="fill_parent" android:layout_height="@dimen/history_album_space" />
+        <include layout="@layout/history_browser" />
+    </LinearLayout>
+    <ListView android:id="@android:id/list" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/PickerListView" />
+</LinearLayout>

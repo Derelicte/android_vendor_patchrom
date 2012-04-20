@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:id="@id/floating_layout" android:focusable="true" android:focusableInTouchMode="true" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.android.contacts.quickcontact.FloatingChildLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ex="http://schemas.android.com/apk/res/com.android.contacts">
+    <LinearLayout android:orientation="vertical" android:id="@android:id/content" android:background="@drawable/quickcontact_window_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/quickcontact_photo_container" />
+        <include layout="@layout/quickcontact_track" />
+        <include android:id="@id/list_separator" layout="@layout/list_separator" />
+        <android.support.v4.view.ViewPager android:id="@id/item_list_pager" android:layout_width="fill_parent" android:layout_height="@dimen/quickcontact_window_list_height" />
+    </LinearLayout>
+</view>

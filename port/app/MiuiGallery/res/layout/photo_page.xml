@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:colorBackground="@null" android:orientation="vertical" android:id="@id/page_layout_root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:colorBackgroundCacheHint="@null"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="top|left|center" android:id="@id/single_view_other" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/single_view_upper" layout="@layout/single_view_upper" />
+        <include android:id="@id/single_view_image_info" layout="@layout/single_view_image_info" />
+    </FrameLayout>
+</LinearLayout>

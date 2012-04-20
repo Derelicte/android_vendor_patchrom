@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
+    <ScrollView android:id="@id/scroll" android:fadingEdge="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:overScrollMode="ifContentScrolls">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:id="@id/usb_mode_notification" android:background="@drawable/notification_item_bg" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/notification_height">
+                <ImageView android:layout_width="@android:dimen/notification_large_icon_width" android:layout_height="@android:dimen/notification_large_icon_width" android:src="@drawable/usb_notifications_button" android:scaleType="fitCenter" />
+                <TextView android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent.Title" android:ellipsize="marquee" android:paddingLeft="10.0dip" android:fadingEdge="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/usb_mode_notification" android:singleLine="true" android:layout_weight="1.0" />
+                <Switch android:id="@id/usb_mode_button" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" />
+            </LinearLayout>
+            <com.android.systemui.statusbar.policy.NotificationRowLayout android:id="@id/latestItems" android:layout_width="fill_parent" android:layout_height="wrap_content" systemui:rowHeight="@dimen/notification_height" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

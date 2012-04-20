@@ -1,0 +1,455 @@
+.class public Lcom/android/browser/homepages/RequestHandler;
+.super Ljava/lang/Thread;
+.source "RequestHandler.java"
+
+
+# static fields
+.field private static final sUriMatcher:Landroid/content/UriMatcher;
+
+
+# instance fields
+.field mContext:Landroid/content/Context;
+
+.field mOutput:Ljava/io/OutputStream;
+
+.field mUri:Landroid/net/Uri;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 4
+
+    .prologue
+    .line 44
+    new-instance v0, Landroid/content/UriMatcher;
+
+    const/4 v1, -0x1
+
+    invoke-direct {v0, v1}, Landroid/content/UriMatcher;-><init>(I)V
+
+    sput-object v0, Lcom/android/browser/homepages/RequestHandler;->sUriMatcher:Landroid/content/UriMatcher;
+
+    .line 51
+    sget-object v0, Lcom/android/browser/homepages/RequestHandler;->sUriMatcher:Landroid/content/UriMatcher;
+
+    const-string v1, "com.android.browser.home"
+
+    const-string v2, "/"
+
+    const/4 v3, 0x1
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
+
+    .line 52
+    sget-object v0, Lcom/android/browser/homepages/RequestHandler;->sUriMatcher:Landroid/content/UriMatcher;
+
+    const-string v1, "com.android.browser.home"
+
+    const-string v2, "res/*/*"
+
+    const/4 v3, 0x2
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
+
+    .line 53
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/net/Uri;Ljava/io/OutputStream;)V
+    .locals 1
+    .parameter "context"
+    .parameter "uri"
+    .parameter "out"
+
+    .prologue
+    .line 55
+    invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
+
+    .line 56
+    iput-object p2, p0, Lcom/android/browser/homepages/RequestHandler;->mUri:Landroid/net/Uri;
+
+    .line 57
+    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/android/browser/homepages/RequestHandler;->mContext:Landroid/content/Context;
+
+    .line 58
+    iput-object p3, p0, Lcom/android/browser/homepages/RequestHandler;->mOutput:Ljava/io/OutputStream;
+
+    .line 59
+    return-void
+.end method
+
+
+# virtual methods
+.method cleanup()V
+    .locals 3
+
+    .prologue
+    .line 148
+    :try_start_0
+    iget-object v1, p0, Lcom/android/browser/homepages/RequestHandler;->mOutput:Ljava/io/OutputStream;
+
+    invoke-virtual {v1}, Ljava/io/OutputStream;->close()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 152
+    :goto_0
+    return-void
+
+    .line 149
+    :catch_0
+    move-exception v0
+
+    .line 150
+    .local v0, e:Ljava/lang/Exception;
+    const-string v1, "RequestHandler"
+
+    const-string v2, "Failed to close pipe!"
+
+    invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    goto :goto_0
+.end method
+
+.method doHandleRequest()V
+    .locals 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 74
+    sget-object v1, Lcom/android/browser/homepages/RequestHandler;->sUriMatcher:Landroid/content/UriMatcher;
+
+    iget-object v2, p0, Lcom/android/browser/homepages/RequestHandler;->mUri:Landroid/net/Uri;
+
+    invoke-virtual {v1, v2}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
+
+    move-result v0
+
+    .line 75
+    .local v0, match:I
+    packed-switch v0, :pswitch_data_0
+
+    .line 83
+    :goto_0
+    return-void
+
+    .line 77
+    :pswitch_0
+    invoke-virtual {p0}, Lcom/android/browser/homepages/RequestHandler;->writeTemplatedIndex()V
+
+    goto :goto_0
+
+    .line 80
+    :pswitch_1
+    invoke-virtual {p0}, Lcom/android/browser/homepages/RequestHandler;->getUriResourcePath()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p0, v1}, Lcom/android/browser/homepages/RequestHandler;->writeResource(Ljava/lang/String;)V
+
+    goto :goto_0
+
+    .line 75
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+        :pswitch_1
+    .end packed-switch
+.end method
+
+.method getUriResourcePath()Ljava/lang/String;
+    .locals 3
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_CODE:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
+
+    .prologue
+    .line 115
+    const-string v2, "/?res/([\\w/\\_\\.]+)"
+
+    invoke-static {v2}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+
+    move-result-object v1
+
+    .line 116
+    .local v1, pattern:Ljava/util/regex/Pattern;
+    iget-object v2, p0, Lcom/android/browser/homepages/RequestHandler;->mUri:Landroid/net/Uri;
+
+    invoke-virtual {v2}, Landroid/net/Uri;->getPath()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+
+    move-result-object v0
+
+    .line 117
+    .local v0, m:Ljava/util/regex/Matcher;
+    invoke-virtual {v0}, Ljava/util/regex/Matcher;->matches()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    .line 118
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, v2}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 120
+    :goto_0
+    return-object v2
+
+    :cond_0
+    iget-object v2, p0, Lcom/android/browser/homepages/RequestHandler;->mUri:Landroid/net/Uri;
+
+    invoke-virtual {v2}, Landroid/net/Uri;->getPath()Ljava/lang/String;
+
+    move-result-object v2
+
+    goto :goto_0
+.end method
+
+.method htmlEncode(Ljava/lang/String;)[B
+    .locals 1
+    .parameter "s"
+
+    .prologue
+    .line 86
+    invoke-static {p1}, Landroid/text/TextUtils;->htmlEncode(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/String;->getBytes()[B
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public run()V
+    .locals 4
+
+    .prologue
+    .line 63
+    invoke-super {p0}, Ljava/lang/Thread;->run()V
+
+    .line 65
+    :try_start_0
+    invoke-virtual {p0}, Lcom/android/browser/homepages/RequestHandler;->doHandleRequest()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 69
+    invoke-virtual {p0}, Lcom/android/browser/homepages/RequestHandler;->cleanup()V
+
+    .line 71
+    :goto_0
+    return-void
+
+    .line 66
+    :catch_0
+    move-exception v0
+
+    .line 67
+    .local v0, e:Ljava/lang/Exception;
+    :try_start_1
+    const-string v1, "RequestHandler"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Failed to handle request: "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/android/browser/homepages/RequestHandler;->mUri:Landroid/net/Uri;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 69
+    invoke-virtual {p0}, Lcom/android/browser/homepages/RequestHandler;->cleanup()V
+
+    goto :goto_0
+
+    .end local v0           #e:Ljava/lang/Exception;
+    :catchall_0
+    move-exception v1
+
+    invoke-virtual {p0}, Lcom/android/browser/homepages/RequestHandler;->cleanup()V
+
+    throw v1
+.end method
+
+.method writeResource(Ljava/lang/String;)V
+    .locals 5
+    .parameter
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 125
+    iget-object v0, p0, Lcom/android/browser/homepages/RequestHandler;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    .line 126
+    const-class v1, Lcom/android/browser/R;
+
+    invoke-virtual {v1}, Ljava/lang/Class;->getPackage()Ljava/lang/Package;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Package;->getName()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 127
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, p1, v2, v1}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+
+    move-result v1
+
+    .line 128
+    if-eqz v1, :cond_0
+
+    .line 129
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->openRawResource(I)Ljava/io/InputStream;
+
+    move-result-object v0
+
+    .line 130
+    const/16 v1, 0x1000
+
+    new-array v1, v1, [B
+
+    .line 132
+    :goto_0
+    invoke-virtual {v0, v1}, Ljava/io/InputStream;->read([B)I
+
+    move-result v2
+
+    if-lez v2, :cond_0
+
+    .line 133
+    iget-object v3, p0, Lcom/android/browser/homepages/RequestHandler;->mOutput:Ljava/io/OutputStream;
+
+    const/4 v4, 0x0
+
+    invoke-virtual {v3, v1, v4, v2}, Ljava/io/OutputStream;->write([BII)V
+
+    goto :goto_0
+
+    .line 136
+    :cond_0
+    return-void
+.end method
+
+.method writeTemplatedIndex()V
+    .locals 8
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 90
+    iget-object v0, p0, Lcom/android/browser/homepages/RequestHandler;->mContext:Landroid/content/Context;
+
+    const v1, 0x7f07000f
+
+    invoke-static {v0, v1}, Lcom/android/browser/homepages/Template;->getCachedTemplate(Landroid/content/Context;I)Lcom/android/browser/homepages/Template;
+
+    move-result-object v7
+
+    .line 91
+    .local v7, t:Lcom/android/browser/homepages/Template;
+    iget-object v0, p0, Lcom/android/browser/homepages/RequestHandler;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    sget-object v1, Landroid/provider/Browser;->BOOKMARKS_URI:Landroid/net/Uri;
+
+    const/4 v2, 0x3
+
+    new-array v2, v2, [Ljava/lang/String;
+
+    const/4 v3, 0x0
+
+    const-string v4, "DISTINCT url"
+
+    aput-object v4, v2, v3
+
+    const/4 v3, 0x1
+
+    const-string v4, "title"
+
+    aput-object v4, v2, v3
+
+    const/4 v3, 0x2
+
+    const-string v4, "thumbnail"
+
+    aput-object v4, v2, v3
+
+    const-string v3, "(visits > 0 OR bookmark = 1) AND url NOT LIKE \'content:%\' AND thumbnail IS NOT NULL"
+
+    const/4 v4, 0x0
+
+    const-string v5, "visits DESC LIMIT 12"
+
+    invoke-virtual/range {v0 .. v5}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+
+    move-result-object v6
+
+    .line 95
+    .local v6, cursor:Landroid/database/Cursor;
+    const-string v0, "most_visited"
+
+    new-instance v1, Lcom/android/browser/homepages/RequestHandler$1;
+
+    invoke-direct {v1, p0, v6}, Lcom/android/browser/homepages/RequestHandler$1;-><init>(Lcom/android/browser/homepages/RequestHandler;Landroid/database/Cursor;)V
+
+    invoke-virtual {v7, v0, v1}, Lcom/android/browser/homepages/Template;->assignLoop(Ljava/lang/String;Lcom/android/browser/homepages/Template$ListEntityIterator;)V
+
+    .line 110
+    iget-object v0, p0, Lcom/android/browser/homepages/RequestHandler;->mOutput:Ljava/io/OutputStream;
+
+    invoke-virtual {v7, v0}, Lcom/android/browser/homepages/Template;->write(Ljava/io/OutputStream;)V
+
+    .line 111
+    return-void
+.end method

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="login_username_edit_text">false</item>
+    <item type="id" name="login_password_edit_text">false</item>
+    <item type="id" name="login">false</item>
+    <item type="id" name="login_button">false</item>
+    <item type="id" name="login_progressbar">false</item>
+    <item type="id" name="forget_password">false</item>
+    <item type="id" name="create_button">false</item>
+    <item type="id" name="nickname_edit_text">false</item>
+    <item type="id" name="show_password">false</item>
+    <item type="id" name="prev_button">false</item>
+    <item type="id" name="next_button">false</item>
+    <item type="id" name="account_by_mobile">false</item>
+    <item type="id" name="mobile_edit_text">false</item>
+    <item type="id" name="get_vercode_button">false</item>
+    <item type="id" name="vercode_edit_text">false</item>
+    <item type="id" name="user_agreement">false</item>
+    <item type="id" name="progressbar">false</item>
+    <item type="id" name="login_status_text">false</item>
+    <item type="id" name="passport_web_layout">false</item>
+    <item type="id" name="passport_web">false</item>
+    <item type="id" name="description">false</item>
+    <item type="id" name="edit_text">false</item>
+    <item type="id" name="verify_button">false</item>
+</resources>

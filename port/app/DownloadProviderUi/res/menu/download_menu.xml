@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/download_only_in_wifi" android:showAsAction="always" android:actionLayout="@layout/download_only_in_wifi" />
+    <item android:icon="@android:drawable/ic_menu_delete" android:id="@id/download_menu_delete_downloads_records" android:title="@string/delete_downloads_records" />
+    <item android:icon="@android:drawable/ic_menu_preferences" android:id="@id/download_menu_settings" android:title="@string/menu_preferences" />
+</menu>

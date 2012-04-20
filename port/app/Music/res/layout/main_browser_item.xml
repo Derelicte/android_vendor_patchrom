@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:paddingLeft="@dimen/main_item_horizontal_space" android:paddingRight="@dimen/main_item_horizontal_space" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MainItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="left|center" android:id="@id/item_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/ItemPrimaryText" />
+    <TextView android:gravity="right|center" android:id="@id/item_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/main_item_arrow" android:drawablePadding="12.669983dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/ItemSecondaryText" />
+</RelativeLayout>

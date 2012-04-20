@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/account_filter_header_container" android:background="@drawable/account_filter_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/contact_list_margin_left" android:layout_marginRight="@dimen/contact_list_margin_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.contacts.list.AccountFilterView android:id="@id/account_filter_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/contact_filter_min_height">
+        <View android:id="@id/indent" android:layout_width="10.0dip" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/cur_account_icon" android:layout_width="@dimen/contact_filter_icon_size" android:layout_height="@dimen/contact_filter_icon_size" android:scaleType="fitCenter" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/cur_account_name" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center_vertical" android:id="@id/contacts_count" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:singleLine="true" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/arrow_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="11.0dip" />
+    </com.android.contacts.list.AccountFilterView>
+</LinearLayout>

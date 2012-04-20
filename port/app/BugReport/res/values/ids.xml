@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="description">false</item>
+    <item type="id" name="layout_system_log">false</item>
+    <item type="id" name="checkbox_system_log">false</item>
+    <item type="id" name="layout_screenshot">false</item>
+    <item type="id" name="checkbox_screenshot">false</item>
+    <item type="id" name="layout_bugreport">false</item>
+    <item type="id" name="checkbox_bugreport">false</item>
+    <item type="id" name="row_section">false</item>
+    <item type="id" name="row_text_content">false</item>
+    <item type="id" name="row_text_content_title">false</item>
+    <item type="id" name="row_text_content_subtitle">false</item>
+    <item type="id" name="row_image_content">false</item>
+    <item type="id" name="menu_preview">false</item>
+    <item type="id" name="menu_send">false</item>
+</resources>

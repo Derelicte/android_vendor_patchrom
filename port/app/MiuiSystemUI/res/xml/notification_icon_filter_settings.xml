@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/notification_icon_filter_settings" android:key="notification_icon_filter_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceCategory android:title="@string/notification_icon_filter" android:key="notification_icon_filter_switches">
+        <SwitchPreference android:persistent="false" android:title="@string/notification_icon_filter_title" android:key="notification_icon_filter_enabled" android:summary="@string/notification_icon_filter_summary" />
+        <SwitchPreference android:persistent="false" android:title="@string/notification_icon_filter_mode" android:key="notification_icon_filter_mode" android:switchTextOn="@string/notification_icon_filter_mode_black_list" android:switchTextOff="@string/notification_icon_filter_mode_white_list" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/notification_icon_filter_show" android:key="notification_icon_filter_list">
+        <com.android.systemui.settings.NoTitlePreference android:persistent="false" android:key="notification_icon_filter_list_empty" android:summary="@string/notification_icon_filter_list_empty_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/notification_icon_filter_other_list" android:key="notification_icon_other_list" />
+</PreferenceScreen>

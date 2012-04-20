@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin">
+    <include latin:keyboardLayout="@xml/kbd_key_styles" />
+    <Row latin:keyWidth="7.124996%p">
+        <Key latin:keyLabelOption="alignLeft" latin:keyStyle="tabKeyStyle" />
+        <Key latin:keyLabel="й" />
+        <Key latin:keyLabel="ц" />
+        <Key latin:keyLabel="у" />
+        <Key latin:keyLabel="к" />
+        <Key latin:moreKeys="@string/more_keys_for_cyrillic_e" latin:keyLabel="е" />
+        <Key latin:keyLabel="н" />
+        <Key latin:keyLabel="г" />
+        <Key latin:keyLabel="ш" />
+        <Key latin:keyLabel="щ" />
+        <Key latin:keyLabel="з" />
+        <Key latin:keyLabel="х" />
+        <Key latin:keyLabel="ъ" />
+        <Key latin:keyStyle="deleteKeyStyle" latin:keyWidth="fillBoth" />
+    </Row>
+    <Row latin:keyWidth="7.124996%p">
+        <Key latin:keyLabelOption="alignLeft" latin:keyStyle="toSymbolKeyStyle" latin:keyWidth="9.375%p" />
+        <Key latin:keyLabel="ф" />
+        <Key latin:keyLabel="ы" />
+        <Key latin:keyLabel="в" />
+        <Key latin:keyLabel="а" />
+        <Key latin:keyLabel="п" />
+        <Key latin:keyLabel="р" />
+        <Key latin:keyLabel="о" />
+        <Key latin:keyLabel="л" />
+        <Key latin:keyLabel="д" />
+        <Key latin:keyLabel="ж" />
+        <Key latin:keyLabel="э" />
+        <Key latin:keyStyle="returnKeyStyle" latin:keyWidth="fillBoth" latin:keyXPos="-9.375%p" />
+    </Row>
+    <Row latin:keyWidth="7.124996%p">
+        <Key latin:keyStyle="shiftKeyStyle" latin:keyWidth="12.749994%p" />
+        <Key latin:keyLabel="я" />
+        <Key latin:keyLabel="ч" />
+        <Key latin:keyLabel="с" />
+        <Key latin:keyLabel="м" />
+        <Key latin:keyLabel="и" />
+        <Key latin:keyLabel="т" />
+        <Key latin:keyLabel="ь" />
+        <Key latin:keyLabel="б" />
+        <Key latin:keyLabel="ю" />
+        <include latin:keyboardLayout="@xml/kbd_row3_comma_period" />
+        <Key latin:keyStyle="shiftKeyStyle" latin:keyWidth="fillBoth" />
+    </Row>
+    <include latin:keyboardLayout="@xml/kbd_qwerty_row4" />
+</merge>

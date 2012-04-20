@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view class="com.android.quicksearchbox.ui.ContactSuggestionView" style="@style/Suggestion"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/contact_container" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" style="@style/SuggestionIcon1">
+        <com.android.quicksearchbox.ui.ContactBadge android:id="@id/icon1" style="?android:attr/quickContactBadgeStyleSmallWindowSmall" />
+    </LinearLayout>
+    <ImageView android:id="@id/icon2" android:visibility="gone" android:scaleType="centerInside" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/SuggestionIcon2" />
+    <TextView android:id="@id/text2" android:visibility="gone" android:singleLine="true" android:layout_toLeftOf="@id/icon2" android:layout_toRightOf="@id/contact_container" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true" style="@style/SuggestionText2" />
+    <TextView android:id="@id/text1" android:layout_toLeftOf="@id/icon2" android:layout_toRightOf="@id/contact_container" android:layout_above="@id/text2" style="@style/SuggestionText1" />
+</view>

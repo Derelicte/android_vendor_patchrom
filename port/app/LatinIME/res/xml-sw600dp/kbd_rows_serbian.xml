@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin">
+    <include latin:keyboardLayout="@xml/kbd_key_styles" />
+    <Row latin:keyWidth="8.000004%p">
+        <Key latin:keyLabel="љ" latin:keyXPos="2.1499991%p" />
+        <Key latin:keyLabel="њ" />
+        <Key latin:keyLabel="е" />
+        <Key latin:keyLabel="р" />
+        <Key latin:keyLabel="т" />
+        <Key latin:keyLabel="з" />
+        <Key latin:keyLabel="у" />
+        <Key latin:keyLabel="и" />
+        <Key latin:keyLabel="о" />
+        <Key latin:keyLabel="п" />
+        <Key latin:keyLabel="ш" />
+        <Key latin:keyStyle="deleteKeyStyle" latin:keyWidth="fillBoth" latin:keyXPos="-10.000002%p" />
+    </Row>
+    <Row latin:keyWidth="7.8999996%p">
+        <Key latin:keyLabel="а" />
+        <Key latin:keyLabel="с" />
+        <Key latin:keyLabel="д" />
+        <Key latin:keyLabel="ф" />
+        <Key latin:keyLabel="г" />
+        <Key latin:keyLabel="х" />
+        <Key latin:keyLabel="ј" />
+        <Key latin:keyLabel="к" />
+        <Key latin:keyLabel="л" />
+        <Key latin:keyLabel="ч" />
+        <Key latin:keyLabel="ћ" />
+        <Key latin:keyStyle="returnKeyStyle" latin:keyWidth="fillBoth" latin:keyXPos="-14.600002%p" />
+    </Row>
+    <Row latin:keyWidth="7.500005%p">
+        <Key latin:keyStyle="shiftKeyStyle" latin:keyWidth="8.000004%p" />
+        <Key latin:keyLabel="ѕ" />
+        <Key latin:keyLabel="џ" />
+        <Key latin:keyLabel="ц" />
+        <Key latin:keyLabel="в" />
+        <Key latin:keyLabel="б" />
+        <Key latin:keyLabel="н" />
+        <Key latin:keyLabel="м" />
+        <Key latin:keyLabel="ђ" />
+        <Key latin:keyLabel="ж" />
+        <include latin:keyboardLayout="@xml/kbd_row3_comma_period" />
+        <include latin:keyboardLayout="@xml/kbd_row3_smiley" />
+    </Row>
+    <include latin:keyboardLayout="@xml/kbd_qwerty_row4" />
+</merge>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="?android:dividerVertical" android:showDividers="middle" android:dividerPadding="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/cancel_menu_item" style="@style/EditorCustomActionButton">
+        <ImageView android:description="@android:string/cancel" android:id="@id/cancel_menu_item_icon" android:src="@drawable/ic_menu_cancel" style="@style/EditorCustomActionButtonImage" />
+        <TextView android:id="@id/cancel_menu_item_text" android:text="@android:string/cancel" style="@style/EditorCustomActionButtonText" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/ok_menu_item" style="@style/EditorCustomActionButton">
+        <ImageView android:description="@android:string/ok" android:id="@id/ok_menu_item_icon" android:src="@drawable/ic_menu_done" style="@style/EditorCustomActionButtonImage" />
+        <TextView android:id="@id/ok_menu_item_text" android:text="@android:string/ok" style="@style/EditorCustomActionButtonText" />
+    </LinearLayout>
+</LinearLayout>

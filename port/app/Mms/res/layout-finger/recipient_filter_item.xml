@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/normal_list_item_bg_nodivider" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <android.widget.QuickContactBadge android:id="@id/avatar" android:visibility="gone" android:layout_width="@dimen/avatar_size_small" android:layout_height="@dimen/avatar_size_small" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/contact" android:paddingLeft="@dimen/list_item_padding_outer" android:paddingRight="@dimen/list_item_padding_outer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textAppearance="@style/TextAppearance.Primary" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/name_and_label" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@style/TextAppearance.Secondary" android:id="@id/number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <TextView android:textAppearance="@style/TextAppearance.Secondary" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

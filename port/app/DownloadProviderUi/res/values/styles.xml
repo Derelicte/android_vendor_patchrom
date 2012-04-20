@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Holo.Light.ActionBar.Solid.HomeUp.NoOptions" parent="@miui:style/Widget.Holo.Light.ActionBar.Solid.HomeUp">
+        <item name="android:displayOptions"></item>
+    </style>
+    <style name="Theme.Light.NoTitle" parent="@miui:style/Theme.Light">
+        <item name="android:actionBarStyle">@style/Widget.Holo.Light.ActionBar.Solid.HomeUp.NoOptions</item>
+    </style>
+</resources>

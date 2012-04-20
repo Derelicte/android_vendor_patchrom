@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="false" android:layout_width="fill_parent" android:layout_height="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@miui:dimen/text_font_size_small" android:textColor="@color/people_app_theme_color" android:ellipsize="end" android:layout_gravity="bottom" android:id="@id/title" android:background="@drawable/list_section_divider_holo_custom" android:paddingLeft="@dimen/detail_and_edit_title_separator_padding_left" android:paddingRight="@dimen/detail_and_edit_title_separator_padding_left" android:singleLine="true" android:textAllCaps="true" style="?android:attr/listSeparatorTextViewStyle" />
+</FrameLayout>

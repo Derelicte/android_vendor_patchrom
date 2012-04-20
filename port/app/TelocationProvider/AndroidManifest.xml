@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.system" android:versionCode="15" android:versionName="4.0.4-eng.yumingyang.20120419.163633" package="com.miui.providers.telocation" coreApp="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="15" />
+    <application android:label="@string/app_label" android:icon="@drawable/ic_launcher_android" android:allowClearUserData="false" android:process="system" android:killAfterRestore="false">
+        <provider android:name="TelocationProvider" android:multiprocess="false" android:authorities="telocation" />
+        <provider android:name="YellowPageProvider" android:multiprocess="false" android:authorities="yellowpage" android:initOrder="100" />
+    </application>
+</manifest>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/title_bar" android:background="@drawable/title_bar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="26.0dip" android:gravity="center" android:id="@id/error_msg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.666992dip" android:text="@string/musicbrowserlabel" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/normal_state" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@id/horizontal_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/goto_nowplaying">
+            <com.miui.player.ui.view.GradualTextView android:textSize="30.0dip" android:textStyle="bold" android:gravity="left|center" android:id="@id/primary_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.666992dip" android:singleLine="true" />
+            <TextView android:gravity="left|center" android:id="@id/secondary_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.666992dip" android:layout_marginTop="2.6669922dip" android:singleLine="true" style="@style/HorizontalTitleSecondaryText" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/vertical_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/goto_nowplaying">
+            <TextView android:gravity="left|center" android:id="@id/primary_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/TitlePrimaryText" />
+            <TextView android:gravity="left|center" android:id="@id/secondary_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/TitleSecondaryText" />
+        </LinearLayout>
+        <ImageView android:gravity="center" android:layout_gravity="right|center" android:id="@id/goto_nowplaying" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/spacing_left" android:src="@drawable/goto_nowplaying_selector" android:scaleType="center" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</FrameLayout>

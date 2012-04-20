@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@miui:dimen/android_preference_item_padding_side" android:paddingRight="?android:scrollbarSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/settings_toggle_layout_style_compact" android:background="@drawable/status_bar_toggle_style_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/status_bar_toggle_style_compact" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/settings_toggle_layout_style_compact_text" android:background="@drawable/status_bar_toggle_style_text_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_toggle_layout_style_compact" android.textColor="?android:attr/textColorPrimary" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/settings_toggle_layout_style_single_page" android:background="@drawable/status_bar_toggle_style_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/status_bar_toggle_style_single_page" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/settings_toggle_layout_style_single_page_text" android:background="@drawable/status_bar_toggle_style_text_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_toggle_layout_style_single_page" android.textColor="?android:attr/textColorPrimary" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

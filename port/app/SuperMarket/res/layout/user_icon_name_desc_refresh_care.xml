@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/user_icon_name_desc" />
+    <include layout="@layout/care_btn_bar" />
+    <LinearLayout android:id="@id/refresh_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include layout="@layout/refresh_icon" />
+    </LinearLayout>
+</LinearLayout>

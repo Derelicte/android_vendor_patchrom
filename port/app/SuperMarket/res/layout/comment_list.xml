@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_panel" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:layout_gravity="center_vertical" android:id="@id/app_info_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" layout="@layout/app_icon_name_desc" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_login_layout" android:background="@drawable/commentor_info_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@id/btn_login" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_to_recommend" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_icon_comment_publish" android:background="@drawable/commentor_info_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/user_icon" layout="@layout/user_icon" />
+        <EditText android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/text_comment" android:background="@drawable/text_editor_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:hint="@string/comment_hint" android:layout_weight="1.0" />
+        <Button android:id="@id/btn_publish" android:background="@drawable/publish_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+    <ListView android:id="@id/comment_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:fastScrollEnabled="true" />
+    <ViewStub android:id="@id/empty" android:layout="@layout/no_application" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <include android:id="@id/bottom_downloading_view" layout="@layout/downloading_view" />
+    <LinearLayout android:id="@id/bottom_btn_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/install" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/install" android:layout_weight="1.0" />
+        <Button android:id="@id/uninstall" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/uninstall" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

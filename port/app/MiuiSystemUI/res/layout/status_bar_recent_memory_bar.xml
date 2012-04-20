@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.recent.AnimateMemoryBar android:layout_gravity="top" android:orientation="vertical" android:id="@id/recents_memory_bar" android:background="@drawable/status_bar_recents_header_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/status_bar_recents_memory_bar_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textColor="@color/recents_memory_occupied" android:layout_gravity="left|center" android:id="@id/recents_memory_occupied" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="@color/recents_memory_total" android:layout_gravity="right|center" android:id="@id/recents_memory_total" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <ProgressBar android:id="@id/recents_memory_progress" android:background="@drawable/recents_memory_progress_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:progressDrawable="@drawable/recents_memory_progress" android:minHeight="0.0dip" style="@android:style/Widget.ProgressBar.Horizontal" />
+</com.android.systemui.recent.AnimateMemoryBar>

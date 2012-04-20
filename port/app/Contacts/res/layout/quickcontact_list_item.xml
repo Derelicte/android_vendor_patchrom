@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.contacts.detail.ActionsViewContainer android:id="@id/actions_view_container" android:nextFocusRight="@id/secondary_action_button" style="@style/QuickContactListItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/QuickContactListItemTextWrapperStyle">
+        <TextView android:textAppearance="@miui:style/TextAppearance.ListView.PrimaryItem" android:ellipsize="end" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textAppearance="@miui:style/TextAppearance.ListView.SecondaryItem" android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" />
+    </LinearLayout>
+    <include layout="@layout/quickcontact_list_item_base" />
+</com.android.contacts.detail.ActionsViewContainer>

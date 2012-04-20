@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/call_detail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ex="http://schemas.android.com/apk/res/com.android.contacts">
+    <ListView android:id="@id/history" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/controls" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <FrameLayout android:id="@id/voicemail_status" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <include layout="@layout/call_log_voicemail_status" />
+        </FrameLayout>
+        <view android:id="@id/contact_background_sizer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/voicemail_status" android:layout_alignParentLeft="true" ex:direction="widthToHeight" ex:ratio="0.5" class="com.android.contacts.widget.ProportionalLayout">
+            <ImageView android:id="@id/contact_background" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+        </view>
+        <LinearLayout android:id="@id/blue_separator" android:background="@android:color/holo_blue_light" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/contact_background_sizer" />
+        <View android:id="@id/photo_text_bar" android:background="#7f000000" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_alignBottom="@id/contact_background_sizer" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/main_action" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginRight="@dimen/call_log_outer_margin" android:scaleType="center" android:layout_alignTop="@id/photo_text_bar" android:layout_alignRight="@id/photo_text_bar" android:layout_alignBottom="@id/photo_text_bar" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?call_log_primary_text_color" android:gravity="center_vertical" android:id="@id/header_text" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/call_detail_contact_name_margin" android:layout_marginRight="@dimen/call_log_inner_margin" android:singleLine="true" android:layout_toLeftOf="@id/main_action" android:layout_alignLeft="@id/photo_text_bar" android:layout_alignTop="@id/photo_text_bar" android:layout_alignBottom="@id/photo_text_bar" />
+        <ImageButton android:id="@id/main_action_push_layer" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignLeft="@id/contact_background_sizer" android:layout_alignTop="@id/contact_background_sizer" android:layout_alignRight="@id/contact_background_sizer" android:layout_alignBottom="@id/contact_background_sizer" />
+        <LinearLayout android:id="@id/voicemail_container" android:background="@android:color/black" android:paddingBottom="@dimen/call_detail_button_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/blue_separator" />
+        <FrameLayout android:id="@id/call_and_sms_container" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/call_detail_button_spacing" android:layout_below="@id/voicemail_container">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/call_and_sms" android:background="@drawable/dialpad_background" android:layout_width="fill_parent" android:layout_height="@dimen/call_log_list_item_height"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/call_and_sms_main_action" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/call_log_indent_margin" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?call_log_primary_text_color" android:id="@id/call_and_sms_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?call_log_primary_text_color" android:id="@id/call_and_sms_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" />
+                </LinearLayout>
+                <View android:layout_gravity="center_vertical" android:id="@id/call_and_sms_divider" android:background="@drawable/ic_divider_dashed_holo_dark" android:layout_width="1.0px" android:layout_height="32.0dip" />
+                <ImageView android:gravity="center" android:id="@id/call_and_sms_icon" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/call_log_inner_margin" android:paddingRight="@dimen/call_log_outer_margin" android:focusable="true" android:layout_width="@color/call_log_voicemail_highlight_color" android:layout_height="fill_parent" android:scaleType="centerInside" />
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+    <View android:id="@id/blank" android:background="#ff000000" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+</RelativeLayout>

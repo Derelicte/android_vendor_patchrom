@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green">#ff377924</color>
+    <color name="deepgrey">#ff4f5961</color>
+    <color name="lightgrey">#ff9b9c9e</color>
+    <color name="transparent_40_black">#60000000</color>
+    <color name="new_version_title">#ffff7e00</color>
+    <color name="share_sign_in_text">#ffff7e00</color>
+</resources>

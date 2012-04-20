@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/header_extra_top_padding" android:layout_width="fill_parent" android:layout_height="@dimen/contact_browser_list_top_margin" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="?list_item_padding_left" android:paddingRight="?list_item_padding_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?list_item_header_height">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/people_app_theme_color" android:layout_gravity="center_vertical" android:id="@id/account_type" android:paddingLeft="?list_item_header_text_indent" android:layout_width="0.0px" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:textAllCaps="true" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="12.0sp" android:textColor="@color/contact_count_text_color" android:ellipsize="middle" android:layout_gravity="center_vertical" android:id="@id/account_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <View android:background="@color/people_app_theme_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

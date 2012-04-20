@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/auto_backup_setting_title" android:key="auto_backup_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/auto_backup_open" android:key="auto_backup" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/auto_backup_only_wifi" android:key="auto_backup_only_wifi" android:dependency="auto_backup" android:defaultValue="true" />
+    <com.miui.milk.ui.SeekBarPreference android:key="auto_backup_interval" android:dependency="auto_backup" android:defaultValue="1" />
+    <Preference android:persistent="false" android:title="@string/auto_backup_time" android:key="auto_backup_time" android:dependency="auto_backup" />
+    <Preference android:persistent="false" android:title="@string/auto_backup_choose" android:key="auto_backup_choose" android:dependency="auto_backup" />
+</PreferenceScreen>

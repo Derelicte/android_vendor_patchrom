@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="top|left|center" android:id="@id/main_list_frame" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.miui.player.ui.view.SortableListView android:gravity="top|left|center" android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/PickerListView" />
+    <com.miui.player.ui.view.AlphabetFastIndexer android:id="@id/fast_indexer" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <LinearLayout android:id="@id/nowplaying_track_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/spacing_picker_list">
+        <ImageView android:layout_gravity="top" android:id="@id/unfolder_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/unfolder_button" />
+        <LinearLayout android:orientation="vertical" android:id="@id/nowplaying_track_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/top_divider" android:background="@drawable/picker_list_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <include layout="@layout/edit_track_list_item" />
+            <View android:id="@id/bottom_divider" android:background="@drawable/picker_list_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

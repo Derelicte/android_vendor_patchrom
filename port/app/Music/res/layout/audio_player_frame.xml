@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/audio_player" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/folder_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="56.0dip" android:src="@drawable/folder_button" android:scaleType="center" />
+    <LinearLayout android:orientation="vertical" android:id="@id/content_wrap" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/spacing_to_border">
+        <FrameLayout android:id="@id/frame_header" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <miui.widget.SpectrumVisualizer android:layout_gravity="center_horizontal" android:id="@id/spectrum_visualizer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:scaleType="center" miui:symmetry="false" miui:sliding_dot_bar="@drawable/sliding_panel_visualization_dot_bar" miui:sliding_panel="@drawable/sliding_panel_visualization_bg" xmlns:miui="http://schemas.android.com/apk/res/miui" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/prevplaying_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/NowplayingItemStyle">
+                <include layout="@layout/nowplaying_item" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/anim_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="300.0dip">
+                    <include layout="@layout/audio_player_album" />
+                    <include layout="@layout/audio_player_lyric" />
+                    <View android:id="@id/album_mask" android:background="@drawable/audio_player_album_mask" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <RelativeLayout android:layout_gravity="top" android:id="@id/time_indicator" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="45.0dip">
+                        <include layout="@layout/time_indicator" />
+                    </RelativeLayout>
+                    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/track_detail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_left" android:layout_marginBottom="40.0dip">
+                        <include layout="@layout/nowplaying_track_detail" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="bottom" android:id="@id/tool_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                        <include layout="@layout/playing_tool_bar" />
+                    </LinearLayout>
+                </FrameLayout>
+                <RelativeLayout android:id="@id/common_tabs" android:background="@drawable/player_common" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/audio_player_common" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/current_track" android:paddingLeft="@dimen/spacing_to_border" android:paddingRight="@dimen/spacing_to_border" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/nowplaying_item" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/NowplayingItemStyle">
+                    <include layout="@layout/nowplaying_item" />
+                </LinearLayout>
+                <TextView android:gravity="left|center" android:id="@id/download_status" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/spacing_left" android:layout_alignParentRight="true" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="top" android:id="@id/frame_footer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/nextplaying_item" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/NowplayingItemStyle">
+                <include layout="@layout/nowplaying_item" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

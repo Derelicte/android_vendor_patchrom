@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="drawable" name="background" id="0x7f020001" />
+    <public type="drawable" name="app_icon" id="0x7f020000" />
+    <public type="drawable" name="background_bottom" id="0x7f020002" />
+    <public type="drawable" name="background_compass" id="0x7f020003" />
+    <public type="drawable" name="background_light" id="0x7f020004" />
+    <public type="drawable" name="background_texture" id="0x7f020005" />
+    <public type="drawable" name="compass" id="0x7f020006" />
+    <public type="drawable" name="compass_cn" id="0x7f020007" />
+    <public type="drawable" name="degree" id="0x7f020008" />
+    <public type="drawable" name="e" id="0x7f020009" />
+    <public type="drawable" name="e_cn" id="0x7f02000a" />
+    <public type="drawable" name="miui_cover" id="0x7f02000b" />
+    <public type="drawable" name="n" id="0x7f02000c" />
+    <public type="drawable" name="n_cn" id="0x7f02000d" />
+    <public type="drawable" name="number_0" id="0x7f02000e" />
+    <public type="drawable" name="number_1" id="0x7f02000f" />
+    <public type="drawable" name="number_2" id="0x7f020010" />
+    <public type="drawable" name="number_3" id="0x7f020011" />
+    <public type="drawable" name="number_4" id="0x7f020012" />
+    <public type="drawable" name="number_5" id="0x7f020013" />
+    <public type="drawable" name="number_6" id="0x7f020014" />
+    <public type="drawable" name="number_7" id="0x7f020015" />
+    <public type="drawable" name="number_8" id="0x7f020016" />
+    <public type="drawable" name="number_9" id="0x7f020017" />
+    <public type="drawable" name="prompt" id="0x7f020018" />
+    <public type="drawable" name="s" id="0x7f020019" />
+    <public type="drawable" name="s_cn" id="0x7f02001a" />
+    <public type="drawable" name="w" id="0x7f02001b" />
+    <public type="drawable" name="w_cn" id="0x7f02001c" />
+    <public type="layout" name="main" id="0x7f030000" />
+    <public type="string" name="app_label" id="0x7f040000" />
+    <public type="string" name="getting_location" id="0x7f040001" />
+    <public type="string" name="cannot_get_location" id="0x7f040002" />
+    <public type="string" name="location_north" id="0x7f040003" />
+    <public type="string" name="location_south" id="0x7f040004" />
+    <public type="string" name="location_east" id="0x7f040005" />
+    <public type="string" name="location_west" id="0x7f040006" />
+    <public type="id" name="view_compass" id="0x7f050000" />
+    <public type="id" name="layout_direction" id="0x7f050001" />
+    <public type="id" name="layout_angle" id="0x7f050002" />
+    <public type="id" name="compass_pointer" id="0x7f050003" />
+    <public type="id" name="location_layout" id="0x7f050004" />
+    <public type="id" name="textview_location" id="0x7f050005" />
+    <public type="id" name="low_accuracy_view" id="0x7f050006" />
+</resources>

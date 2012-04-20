@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin">
+    <switch>
+        <case latin:f2KeyMode="settings">
+            <Key latin:keyStyle="settingsKeyStyle" latin:keyWidth="fillBoth" />
+        </case>
+        <case latin:f2KeyMode="shortcutIme">
+            <switch>
+                <case latin:shortcutKeyEnabled="true">
+                    <Key latin:keyStyle="shortcutKeyStyle" latin:keyWidth="fillBoth" />
+                </case>
+                <default>
+                    <Spacer />
+                </default>
+            </switch>
+        </case>
+        <case latin:f2KeyMode="shortcutImeOrSettings">
+            <switch>
+                <case latin:shortcutKeyEnabled="true">
+                    <Key latin:keyStyle="shortcutKeyStyle" latin:keyWidth="fillBoth" />
+                </case>
+                <default>
+                    <Key latin:keyStyle="settingsKeyStyle" latin:keyWidth="fillBoth" />
+                </default>
+            </switch>
+        </case>
+        <default>
+            <Spacer />
+        </default>
+    </switch>
+</merge>

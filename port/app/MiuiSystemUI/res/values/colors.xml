@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="status_bar_recents_app_label_color">#ffffffff</color>
+    <color name="notification_list_shadow_top">#80000000</color>
+    <color name="recents_memory_occupied">#ffff7e00</color>
+    <color name="recents_memory_total">#ffa3a3a3</color>
+    <color name="recents_no_apps">#ff464646</color>
+    <color name="status_bar_background_transparent">#66000000</color>
+    <color name="status_bar_textColor">@miui:color/primary_text_holo_dark</color>
+    <color name="status_bar_textColor_alternative">@miui:color/primary_text_holo_light</color>
+    <color name="toggle_lable_color">#ff645750</color>
+    <color name="tab_lable_color_p">#ffee7d05</color>
+    <color name="tab_lable_color_n">#ff645750</color>
+</resources>

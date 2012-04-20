@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Suggestion">
+        <item name="android:background">@drawable/suggestion_background</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/suggestion_view_height</item>
+    </style>
+    <style name="FocusingSuggestion" parent="@style/Suggestion">
+        <item name="android:background">@drawable/highlighting_suggestion_background</item>
+        <item name="android:focusable">true</item>
+    </style>
+    <style name="SuggestionText1">
+        <item name="android:textSize">@dimen/suggestion_text1_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="SuggestionText2">
+        <item name="android:textSize">@dimen/suggestion_text2_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:gravity">top|left|center</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:paddingBottom">4.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/suggestion_text2_height</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="SuggestionIcon1">
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:layout_width">@dimen/suggestion_icon_size</item>
+        <item name="android:layout_height">@dimen/suggestion_icon_size</item>
+    </style>
+    <style name="WebSuggestionIcon1" parent="@style/SuggestionIcon1" />
+    <style name="SuggestionIcon2">
+        <item name="android:layout_width">@dimen/suggestion_icon_size</item>
+        <item name="android:layout_height">@dimen/suggestion_icon_size</item>
+    </style>
+    <style name="SuggestionText1.Query" parent="@style/SuggestionText1" />
+    <style name="SuggestionText1.Suggested" parent="@style/SuggestionText1">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Animation.SelectSearchSource" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/corpus_selector_open</item>
+        <item name="android:windowExitAnimation">@anim/corpus_selector_close</item>
+    </style>
+    <style name="Theme.QuickSearchBox" parent="@android:style/Theme.Light" />
+    <style name="Theme.QuickSearchBox.Search" parent="@style/Theme.QuickSearchBox">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">stateUnchanged|adjustResize</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="Theme.QuickSearchBox.SearchWidgetConfig" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="Theme.SelectSearchSource" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/Animation.SelectSearchSource</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowSoftInputMode">stateUnchanged|adjustResize</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:id="@id/pie_show_tabs" android:background="@drawable/pie_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pie_show_tabs" android:scaleType="center" />
+    <TextView android:typeface="sans" android:textColor="@miui:color/information_error" android:gravity="center" android:layout_gravity="top|right|center" android:id="@id/tab_count" android:background="@drawable/pie_tab_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

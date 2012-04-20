@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:colorBackground="@null" android:orientation="vertical" android:id="@id/page_layout_root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:colorBackgroundCacheHint="@null"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/camera_view_title" style="@style/HomePageTitleContainer" />
+            <ImageView style="@style/HomePageSeparator" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/home_page_camera_view" android:layout_width="fill_parent" android:layout_height="@dimen/home_page_camera_view_height" />
+        </LinearLayout>
+        <ImageView android:id="@id/home_page_selection_mask_camera" style="@style/HomePageSelectionMask" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/recent_album_view_title" style="@style/HomePageTitleContainer">
+                <com.miui.gallery.ui.GradualTextView android:id="@id/title_count" android:paddingLeft="@dimen/home_page_title_padding_left" style="@style/TitleGradualText" />
+                <TextView android:id="@id/title_desc" android:text="@string/all_albums_desc" style="@style/TitleDescText" />
+            </LinearLayout>
+            <ImageView style="@style/HomePageSeparator" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/home_page_recent_album_view" android:layout_width="fill_parent" android:layout_height="@dimen/home_page_recent_album_view_height" />
+        </LinearLayout>
+        <ImageView android:id="@id/home_page_selection_mask_recent_album" style="@style/HomePageSelectionMask" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView style="@style/HomePageGarySeparator" />
+            <RelativeLayout android:id="@id/storage_explorer" android:background="@drawable/title_large_selector" android:layout_height="@dimen/home_page_title_height" style="@style/HomePageTitleContainer">
+                <TextView android:text="@string/sd_explorer" android:layout_alignParentLeft="true" style="@style/HomePageTitleText" />
+                <ImageView style="@style/HomePageTitleNavigatorIcon" />
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/home_page_selection_mask_bottom" style="@style/HomePageSelectionMask" />
+    </FrameLayout>
+</LinearLayout>
